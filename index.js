@@ -12,6 +12,8 @@ var fs = require('fs')
 var database;
 ReadJSONData();
 
+var adminIDs = ["473191715411329035", "351574671109521410"];
+
 
 client.on("ready", function() {
   console.log("Ready!");
@@ -31,40 +33,67 @@ client.on('message', msg => {      ///MESSAGE HANDLER
   }
 
   /////////////// SPECIAL ADMIN COMMANDS ////////////////////////
-  if(msg.author.id == "473191715411329035" || msg.author.id == "351574671109521410") {
-    if(message == "!resetcd") {
-      for(var i = 0; i < database.users.length; i++) {
-        user = database.users[i];
-        user.cooldowns = {};
+  if(message == "!resetcd") {
+    if(!adminIDs.includes(msg.author.id)) { //Only let admins use this command
+      msg.channel.send("Sorry bestie, you dont have permission to do that :disappointed_relieved:");
+      return;
+    }
+    for(var i = 0; i < database.users.length; i++) {
+      user = database.users[i];
+      user.cooldowns = {};
+    }
+    msg.channel.send("All cooldowns have been reset!");
+    console.log("An admin reset all cooldowns");
+    SaveDataToJSON();
+    return;
+  }
+
+  if(message.substring(0, 10) == "!addcoins ") {
+    if(!adminIDs.includes(msg.author.id)) { //Only let admins use this command
+      msg.channel.send("Sorry bestie, you dont have permission to do that :disappointed_relieved:");
+      return;
+    }
+    var substrings = message.split(" ");
+    var targetIndex = GetIndexFromPingOrName(substrings[1]);
+    var amount = Number(substrings[2]);
+
+    if(targetIndex > -1 && amount) {
+      var target = database.users[targetIndex];
+      target.wallet += amount;
+      if(amount >= 0) {
+        msg.channel.send("Added " + amount + " coins to " + target.name + "'s wallet");
+        console.log("An admin added " + amount + " coins to " + target.name + "'s wallet");
       }
-      msg.channel.send("All cooldowns have been reset!");
-      console.log("An admin reset all cooldowns");
+      else {
+        msg.channel.send("Subtracted " + Math.abs(amount) + " coins froms " + target.name + "'s wallet");
+        console.log("An admin removed " + Math.abs(amount) + " coins from " + target.name);
+      }
       SaveDataToJSON();
       return;
     }
+    else {
+      return;
+    }
+  }
+  if(message.substring(0, 10) == "!setcoins ") {
+    if(!adminIDs.includes(msg.author.id)) { //Only let admins use this command
+      msg.channel.send("Sorry bestie, you dont have permission to do that :disappointed_relieved:");
+      return;
+    }
+    var substrings = message.split(" ");
+    var targetIndex = GetIndexFromPingOrName(substrings[1]);
+    var amount = Number(substrings[2]);
 
-    if(message.substring(0, 10) == "!addcoins ") {
-      var substrings = message.split(" ");
-      var targetIndex = GetIndexFromPingOrName(substrings[1]);
-      var amount = Number(substrings[2]);
-
-      if(targetIndex > -1 && amount) {
-        var target = database.users[targetIndex];
-        target.wallet += amount;
-        if(amount >= 0) {
-          msg.channel.send("Added " + amount + " coins to " + target.name + "'s wallet");
-          console.log("An admin added " + amount + " coins to " + target.name + "'s wallet");
-        }
-        else {
-          msg.channel.send("Subtracted " + Math.abs(amount) + " coins froms " + target.name + "'s wallet");
-          console.log("An admin removed " + Math.abs(amount) + " coins from " + target.name);
-        }
-        SaveDataToJSON();
-        return;
-      }
-      else {
-        return;
-      }
+    if(targetIndex > -1 && amount) {
+      var target = database.users[targetIndex];
+      target.wallet = amount;
+      console.log("An admin set " + target.name + "'s balance to " + amount);
+      msg.channel.send("Set " + target.name + "'s coins to " + amount);
+      SaveDataToJSON();
+      return;
+    }
+    else {
+      return;
     }
   }
 
@@ -162,10 +191,10 @@ client.on('message', msg => {      ///MESSAGE HANDLER
         msg.channel.send("The fuck Thursday")
         break;
       case 5:
-        msg.channel.send("FORTNITE FRIDAY!!!!!!!!!!!!!!!!!!!!!!!!!!!")
+        msg.channel.send("ITS FORTNITE FRIDAY!!!!!!!!!!!!!!!!!!!!!!!!!!!")
         break;
       case 6:
-        msg.channel.send("Shooter Saturday :gun: :gun: ")
+        msg.channel.send("Today is Shooter Saturday :gun: :gun: ")
         break;
     }
     return;
@@ -280,7 +309,7 @@ client.on('message', msg => {      ///MESSAGE HANDLER
     );
     embed.setColor(0x38c96e);
     msg.channel.send(embed);
-    msg.channel.send("Wow! look at that money :smiling_face_with_3_hearts: So cool and quirky!");
+    //msg.channel.send("Wow! look at that money :smiling_face_with_3_hearts: So cool and quirky!");
     return;
   }
 
@@ -467,7 +496,7 @@ client.on('message', msg => {      ///MESSAGE HANDLER
   // --------------- Gambling --------------------- //
   // if(message.substring(0, 9) == "!coinflip") {
   //   if(message.split())
-  // } 
+  // }
 
   if(message.substring(0, 7) == "!slots ") {
     var payoutFactor = 7; //FACTOR OF HOW MUCH MONEY YOU GET BACK FOR A WIN
