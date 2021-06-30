@@ -12,6 +12,7 @@ var fs = require('fs')
 var database;
 ReadJSONData();
 
+//aa
 
 client.on("ready", function() {
   console.log("Ready!");
