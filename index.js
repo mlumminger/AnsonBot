@@ -11,7 +11,7 @@ client.login(process.env['DiscordToken']);
 var fs = require('fs')
 var database;
 ReadJSONData();
-//Expiremntal stuff
+
 
 client.on("ready", function() {
   console.log("Ready!");
