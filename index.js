@@ -464,7 +464,7 @@ client.on('message', msg => {      ///MESSAGE HANDLER
   // --------------- Gambling --------------------- //
   // if(message.substring(0, 9) == "!coinflip") {
   //   if(message.split())
-  // }
+  // } 
 
   if(message.substring(0, 7) == "!slots ") {
     var payoutFactor = 7; //FACTOR OF HOW MUCH MONEY YOU GET BACK FOR A WIN
