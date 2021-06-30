@@ -115,6 +115,10 @@ client.on('message', msg => {      ///MESSAGE HANDLER
 
     if (message.substring(0, 5) == "!name") {
       var name = rawMessage.slice(6);
+      if(name.includes(" ")) {
+        msg.channel.send("As of right now, there is an issue with using spaces in your nickname, please avoid using spaces for now");
+        return;
+      }
       var index = GetIndexFromUserID(msg.author.id, true);
       if (name.length == 0) {
         var currentName = database.users[index].name;
