@@ -1,0 +1,83 @@
+{
+	"users": [
+		{
+			"id": "351574671109521410",
+			"wallet": 0,
+			"bank": -13,
+			"name": "Vinh",
+			"cooldowns": {
+				"rob": 1625021740702,
+				"beg": 1625034124775
+			}
+		},
+		{
+			"id": "385460963517661194",
+			"wallet": 79,
+			"bank": 2416876,
+			"name": "Shane Canet",
+			"cooldowns": {}
+		},
+		{
+			"id": "459464484847747072",
+			"wallet": 266,
+			"bank": 9391,
+			"name": "Xavier",
+			"cooldowns": {}
+		},
+		{
+			"id": "484859857409671191",
+			"wallet": 124,
+			"bank": 0,
+			"name": "Torno",
+			"cooldowns": {}
+		},
+		{
+			"id": "533468943851978773",
+			"wallet": 84,
+			"bank": 1000,
+			"name": "Chau",
+			"cooldowns": {}
+		},
+		{
+			"id": "694609292019368009",
+			"wallet": 0,
+			"bank": 79839,
+			"name": "Nick",
+			"cooldowns": {
+				"beg": 1625026516873,
+				"rob": 1625021673056
+			}
+		},
+		{
+			"id": "472210194814730250",
+			"wallet": 0,
+			"bank": 0,
+			"name": "Julián",
+			"cooldowns": {}
+		},
+		{
+			"id": "236727649114914817",
+			"wallet": 413,
+			"bank": 0,
+			"name": "Anson",
+			"cooldowns": {}
+		},
+		{
+			"id": "221685858166636544",
+			"wallet": 377,
+			"bank": 999000,
+			"name": "Karen",
+			"cooldowns": {}
+		},
+		{
+			"id": "473191715411329035",
+			"wallet": -100000100000010,
+			"bank": 1148,
+			"name": "Max",
+			"cooldowns": {
+				"rob": 1625026497028
+			}
+		}
+	],
+	"totalMoney": 0
+}

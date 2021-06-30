@@ -1,0 +1,26 @@
+inventory: {
+  itemA: {
+    "name": "gamer chan nft",
+  }
+}
+
+shop: {
+  gamerchan: {
+    name: "gamer chan nft",
+    price: 100
+    
+  }
+  penis: {
+    name: "Weird Looking Thing",
+    price: 10000000,
+    numInStock: 10,
+  }
+  ansonsmellymmm: {
+    name: "Anson's unwashed maid outfit",
+    price: priceless,
+    numInStock: 1
+  }
+}
+
+
+STOCK MARKET BABY!!!!
