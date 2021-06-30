@@ -26,6 +26,9 @@ client.on('message', msg => {      ///MESSAGE HANDLER
   var rawMessage = msg.content;
   var message = rawMessage.toLowerCase();
 
+  if(message == "!version") {
+    msg.channel.send("Experimental");
+  }
 
   /////////////// SPECIAL ADMIN COMMANDS ////////////////////////
   if(msg.author.id == "473191715411329035" || msg.author.id == "351574671109521410") {
