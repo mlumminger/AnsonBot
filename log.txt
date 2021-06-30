@@ -1,0 +1,3 @@
+[10:18:48]: App listening at http://localhost:${port}
+[10:18:49]: Ready!
+[10:18:55]: Clearing recent messages

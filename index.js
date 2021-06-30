@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const port = 3000;
 app.get('/', (req, res) => res.send('Bot Online!'));
-app.listen(port, () => console.log('App listening at http://localhost:${port}'));
+app.listen(port, () => print('App listening at http://localhost:${port}'));
 const Discord = require("discord.js");
 const client = new Discord.Client();
 
@@ -10,6 +10,8 @@ client.login(process.env['DiscordToken']);
 
 var fs = require('fs')
 var database;
+var log = "";
+var logCounter = 0;
 ReadJSONData();
 
 var adminIDs = ["473191715411329035", "351574671109521410"];
@@ -17,7 +19,7 @@ var adminIDs = ["473191715411329035", "351574671109521410"];
 
 
 client.on("ready", function() {
-  console.log("Ready!");
+  print("Ready!");
   client.user.setStatus('online');
   client.user.setActivity("with E-Girls q(≧▽≦q) !help");
 })
@@ -50,7 +52,7 @@ client.on('message', msg => {      ///MESSAGE HANDLER
         user.cooldowns = {};
       }
       msg.channel.send("All cooldowns have been reset!");
-      console.log("An admin reset all cooldowns");
+      print("An admin reset all cooldowns");
       SaveDataToJSON();
       return;
     }
@@ -69,11 +71,11 @@ client.on('message', msg => {      ///MESSAGE HANDLER
         target.wallet += amount;
         if(amount >= 0) {
           msg.channel.send("Added " + amount + " coins to " + target.name + "'s wallet");
-          console.log("An admin added " + amount + " coins to " + target.name + "'s wallet");
+          print("An admin added " + amount + " coins to " + target.name + "'s wallet");
         }
         else {
           msg.channel.send("Subtracted " + Math.abs(amount) + " coins froms " + target.name + "'s wallet");
-          console.log("An admin removed " + Math.abs(amount) + " coins from " + target.name);
+          print("An admin removed " + Math.abs(amount) + " coins from " + target.name);
         }
         SaveDataToJSON();
         return;
@@ -94,7 +96,7 @@ client.on('message', msg => {      ///MESSAGE HANDLER
       if(targetIndex > -1 && amount) {
         var target = database.users[targetIndex];
         target.wallet = amount;
-        console.log("An admin set " + target.name + "'s balance to " + amount);
+        print("An admin set " + target.name + "'s balance to " + amount);
         msg.channel.send("Set " + target.name + "'s coins to " + amount);
         SaveDataToJSON();
         return;
@@ -132,7 +134,7 @@ client.on('message', msg => {      ///MESSAGE HANDLER
       else {
         database.users[index].name = name;
         msg.reply(" changed their name to " + name);
-        console.log("User ID " + msg.author.id + " changed their name to " + name);
+        print("User ID " + msg.author.id + " changed their name to " + name);
         SaveDataToJSON();
       }
       return;
@@ -166,7 +168,7 @@ client.on('message', msg => {      ///MESSAGE HANDLER
 
     if(message == "!clear") {
       msg.channel.messages.fetch({limit: 100}).then(recentMessages => {
-        console.log("Clearing recent messages");
+        print("Clearing recent messages");
         recentMessages.forEach(function(m) {
           if(m.author.id == client.user.id || m.content.substring(0, 1) == "!") {
             m.delete();
@@ -714,8 +716,39 @@ function DivideByWhitespace(string) {
   return string.split(" ").filter(function(i) {return i});
 }
 
+function print(message, type, logMessage = true) {
+  if(logMessage) {
+    var d = new Date();
+    var hours = ("0" + d.getHours()).slice(-2);
+    var minutes = ("0" + d.getMinutes()).slice(-2);
+    var seconds = ("0" + d.getSeconds()).slice(-2);
+    var logDate = "[" + hours + ":" + minutes + ":" + seconds + "]: ";
+    log += logDate;
+  }
+
+  if(type == "error") {
+    console.error(message);
+    if(logMessage) {
+      log += "Error: " + message + "\n";
+      logCounter++;
+    }
+  }
+  else {
+    console.log(message);
+    if(logMessage) {
+      log += message + "\n";
+      logCounter++;
+    }
+  }
+  if(logMessage && logCounter > 0) {
+    fs.appendFileSync("log.txt", log);
+    log = "";
+    logCounter = 0;
+  }
+}
+
 function OnError(error, message) {
   message.channel.send("Oh no! looks like i ran into a little bit of a problem!");
-  console.log("An error occured due to the message: \"" + message.content + "\"");
-  console.error(error);
+  print("An error occured due to the message: \"" + message.content + "\"");
+  //print(error, "error");
 }
