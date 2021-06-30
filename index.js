@@ -15,6 +15,7 @@ ReadJSONData();
 var adminIDs = ["473191715411329035", "351574671109521410"];
 
 
+
 client.on("ready", function() {
   console.log("Ready!");
   client.user.setStatus('online');
@@ -27,7 +28,8 @@ client.on('message', msg => {      ///MESSAGE HANDLER
   if (msg.author == client.user.id) return;
   var rawMessage = msg.content;
   var message = rawMessage.toLowerCase();
-  
+
+
   try {
     if(message == "!error") {
       user.add(penis.cock);
@@ -58,7 +60,7 @@ client.on('message', msg => {      ///MESSAGE HANDLER
         msg.channel.send("Sorry bestie, you dont have permission to do that :disappointed_relieved:");
         return;
       }
-      var substrings = message.split(" ");
+      var substrings = DivideByWhitespace(message);
       var targetIndex = GetIndexFromPingOrName(substrings[1]);
       var amount = Number(substrings[2]);
 
@@ -85,7 +87,7 @@ client.on('message', msg => {      ///MESSAGE HANDLER
         msg.channel.send("Sorry bestie, you dont have permission to do that :disappointed_relieved:");
         return;
       }
-      var substrings = message.split(" ");
+      var substrings = DivideByWhitespace(message);
       var targetIndex = GetIndexFromPingOrName(substrings[1]);
       var amount = Number(substrings[2]);
 
@@ -133,7 +135,7 @@ client.on('message', msg => {      ///MESSAGE HANDLER
     }
     
     if (message == "!help") {
-      var substrings = message.split(" ");
+      var substrings = DivideByWhitespace(message);
       var request = substrings[1];
       var embed = new Discord.MessageEmbed();
       
@@ -303,8 +305,8 @@ client.on('message', msg => {      ///MESSAGE HANDLER
       ReadJSONData();
 
       var user;
-      if(message.split(" ").length > 1) {
-        var targetIndex = GetIndexFromPingOrName(message.split(" ")[1]);
+      if(DivideByWhitespace(message).length > 1) {
+        var targetIndex = GetIndexFromPingOrName(DivideByWhitespace(message)[1]);
         if(targetIndex > -1) {
           user = database.users[targetIndex];
         }
@@ -338,11 +340,11 @@ client.on('message', msg => {      ///MESSAGE HANDLER
         if(user.bank >= amount) {
           user.wallet += amount;
           user.bank -= amount;
-          msg.channel.send("you transfered " + amount + " coins to your wallet! :Felix_Cheer:");
+          msg.channel.send("you transfered " + amount + " coins to your wallet! <:Felix_Cheer:859541940722204683>");
         }
         else {
           msg.channel.send("oh no! too bad bestie! looks like you dont have enough money to withdraw! :confounded:");
-          return
+          return;
         }
       }
       else if(amount == 0) {
@@ -392,7 +394,7 @@ client.on('message', msg => {      ///MESSAGE HANDLER
     }
 
     if (message.includes("!give ") || message.includes("!send ")) {
-      var substrings = message.split(" ");
+      var substrings = DivideByWhitespace(message);
       var targetID = GetIDFromPing(substrings[1]);
       var target = GetDiscordUserFromID(targetID);
       var amount = Number(substrings[2]);
@@ -434,8 +436,8 @@ client.on('message', msg => {      ///MESSAGE HANDLER
 
       var target;
       
-      if(message.split(" ").length > 1) {
-        var targetIndex = GetIndexFromPingOrName(message.split(" ")[1]);
+      if(DivideByWhitespace(message).length > 1) {
+        var targetIndex = GetIndexFromPingOrName(DivideByWhitespace(message)[1]);
         if(targetIndex > -1) {
           target = database.users[targetIndex];
           if (thief.name == target.name) {
@@ -510,9 +512,51 @@ client.on('message', msg => {      ///MESSAGE HANDLER
 
 
     // --------------- Gambling --------------------- //
-    // if(message.substring(0, 9) == "!coinflip") {
-    //   if(message.split())
-    // }
+
+    if(message.substring(0, 9) == "!coinflip") {
+      var user = database.users[GetIndexFromUserID(msg.author.id, true, msg)];
+      var heads = GetRandomInt(0, 1);
+
+      var embed = new Discord.MessageEmbed();
+      embed.setTitle("Coinflip");
+      embed.setColor(0xffffff * heads); //White if heads, black if tails
+
+      if(DivideByWhitespace(message)[1]) {
+        var amount = Number(DivideByWhitespace(message)[1]);
+        if(amount) {
+          if(user.wallet >= amount) {
+            if(heads) {
+              embed.addField("The coin landed on Heads!", "You gained " + amount + " coins!", true);
+              user.wallet += amount;
+            }
+            else {
+              embed.addField("The coin landed on Tails!", "You lost " + amount + " coins!", true);
+              user.wallet -= amount;
+            }
+          }
+          else {
+            msg.channel.send("You're too broke to bet that much!");
+            return;
+          }
+        }
+        else {
+          msg.channel.send("Thats not a valid number, silly!")
+          return;
+        }
+      }
+      else {
+        if(heads) {
+            embed.setDescription("The coin landed on Heads!");
+        }
+        else {
+          embed.setDescription("The coin landed on Tails!");
+        }
+      }
+      msg.channel.send(embed);
+      
+      SaveDataToJSON();
+      return;
+    }
 
     if(message.substring(0, 7) == "!slots ") {
       var payoutFactor = 7; //FACTOR OF HOW MUCH MONEY YOU GET BACK FOR A WIN
@@ -641,7 +685,7 @@ function ReadJSONData() {
 }
 
 function GetRandomInt(min, max) {
-  return Math.round(Math.random() * (max - min)) + min;
+  return Math.floor(Math.random() * (max - min + 1) + min);
 }
 
 function SetCooldown(userID, name, duration) {
@@ -662,7 +706,12 @@ function GetDateDifference(date1, date2) {
   return diff;
 }
 
+function DivideByWhitespace(string) {
+  return string.split(" ").filter(function(i) {return i});
+}
+
 function OnError(error, message) {
   message.channel.send("Oh no! looks like i ran into a little bit of a problem!");
   console.log("An error occured due to the message: \"" + message.content + "\"");
+  console.error(error);
 }
