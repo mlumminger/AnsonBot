@@ -117,13 +117,13 @@ client.on('message', msg => {      ///MESSAGE HANDLER
         return;
       }
     }
-
+    
     //-------------- GENERAL STUFF-----------------////
 
     if ((msg.author.id == 351574671109521410 && version == "experimental") || (msg.author.id == ansonID && version == "master")) {
       var chance = GetRandomInt(0, 100); //Change for something to happen
       
-      if(chance < 100) {
+      if(chance < 5) {
         var selectionChance = GetRandomInt(0, 100); //Chance for different things
         var quotes = [
             "you're the imposter",
@@ -144,9 +144,50 @@ client.on('message', msg => {      ///MESSAGE HANDLER
         }
       }
     }
+
+    //Just do "lets have a child" no ones gonna say that without the birth off anyway lol
+    // unless an ecouple is planning their future
+    
+    if(message.includes("lets have a child")) {
+      var name = message.guild.member(message.author).displayName;
+      if(!name) name = message.author.username;
+      msg.channel.send(name + ": I have been ordered to issue an apology by the court of law, in no instance should child birth be linked to illegal gambling, and if there's one thing that makes childbirth a drag... It's illegal gambling. Please forgive me and don't set up a child birth-off of your own.");
+      return;
+    }
+    
+    if(["rhodesian", "rhodesia"].includes(message)) {
+      var messages = [
+        "Stay away from politics bestie! :heart:",
+        "Rhodesia? that dissolved 40 years ago. Get with the times!!"
+      ]
+      msg.channel.send(messages[GetRandomInt(0, messages.length - 1)]);
+      return;
+    }
+    
+    if(["cat ", "kitty", "nya", "nidalee", "kat", "nid", "rengar"].includes(message)) {
+      msg.channel.send("nya~");
+      return;
+    }
+
+    if(["angey", "angy"].includes(message)) {
+      var messages = [
+        ">:c",
+        ">:C"
+      ]
+      if(version == "master") messages.push("<:angey:856240888794316800>");
+      msg.channel.send(messages[GetRandomInt(0, messages.length - 1)]);
+      return;
+    }
+    
+    if(message.includes("What are you doing?")) {
+      var name = message.guild.member(message.author).displayName;
+      if(!name) name = message.author.username;
+      msg.channel.send("Step " + name);
+      return;
+    }
     
     
-    
+
     if (message.includes("!femboyanson")) {
       var images = [
         'https://cdn.discordapp.com/attachments/525177389396000788/858982174979915814/image0.jpg',
@@ -378,7 +419,7 @@ client.on('message', msg => {      ///MESSAGE HANDLER
       }
 
       var embed = new Discord.MessageEmbed();
-      embed.setTitle(user.name + "\'s balance:");
+      embed.setTitle(user.name + "\'s Balance:");
       embed.addFields(
         { name: "Wallet Balance", value: user.wallet, inline: true },
         { name: "Bank Balance", value: user.bank, inline: true }
@@ -584,7 +625,7 @@ client.on('message', msg => {      ///MESSAGE HANDLER
     }
 
 
-    if (message.substring(0, 12) == "!leaderboard" || message.substring(0, 3) == "!lb") {
+    if (["!leaderboard", "!lb"].includes(DivideByWhitespace(message)[0])) {
       var users = database.users;
       var leader_board = []
       var size = users.length
@@ -602,16 +643,14 @@ client.on('message', msg => {      ///MESSAGE HANDLER
       var embed = new Discord.MessageEmbed();
       embed.setTitle("Top " + size + " Sugar Daddies");
       embed.setDescription("Calculated Based On Wallet and Bank Balance");
-      embed.addField("Names", leader_board.map(({ name }) => name), true)
-      embed.addField("Total Money", leader_board.map(({ score }) => score), true)
-
+      embed.addField("Names", leader_board.map(({ name }) => name), true);
+      embed.addField("Total Money", leader_board.map(({ score }) => score), true);
       msg.channel.send(embed);
       return;
     }
 
     // --------------- Gambling --------------------- //
-    
-    if (message.substring(0, 9) == "!coinflip") {
+    if (["!cf", "!coinflip"].includes(DivideByWhitespace(message)[0])) {
       var user = database.users[GetIndexFromUserID(msg.author.id, true, msg)];
       var heads = GetRandomInt(0, 1);
 
@@ -625,6 +664,14 @@ client.on('message', msg => {      ///MESSAGE HANDLER
         if(isNaN(amount)) { //If amount is not a number
           if(amount == "all") {             
             amount = user.wallet;
+            if (heads) {
+              user.wallet += amount;
+              embed.addField("The coin landed on Heads!", "You gained " + amount + " coins! Your balance is now " + user.wallet, true);
+            }
+            else {
+              user.wallet -= amount;
+              embed.addField("The coin landed on Tails!", "You lost " + amount + " coins! Your balance is now " + user.wallet, true);
+            }
           }
           else {
             msg.channel.send("Thats not a valid amount uwu");
@@ -633,15 +680,15 @@ client.on('message', msg => {      ///MESSAGE HANDLER
         }
         else {
           amount = Math.floor(Number(amount));
-          if(number > 0) {
+          if(amount > 0) {
             if (user.wallet >= amount) {
               if (heads) {
-                embed.addField("The coin landed on Heads!", "You gained " + amount + " coins!", true);
                 user.wallet += amount;
+                embed.addField("The coin landed on Heads!", "You gained " + amount + " coins! Your balance is now " + user.wallet, true);
               }
               else {
-                embed.addField("The coin landed on Tails!", "You lost " + amount + " coins! Your balance is now " + user.wallet, true);
                 user.wallet -= amount;
+                embed.addField("The coin landed on Tails!", "You lost " + amount + " coins! Your balance is now " + user.wallet, true);
               }
             }
             else {

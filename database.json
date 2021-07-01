@@ -2,7 +2,7 @@
 	"users": [
 		{
 			"id": "351574671109521410",
-			"wallet": 500,
+			"wallet": 0,
 			"bank": 500,
 			"name": "Vinh",
 			"cooldowns": {}
@@ -65,7 +65,7 @@
 		},
 		{
 			"id": "473191715411329035",
-			"wallet": 1569,
+			"wallet": 3138,
 			"bank": 0,
 			"name": "Max",
 			"cooldowns": {}
