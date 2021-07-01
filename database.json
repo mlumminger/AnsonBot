@@ -2,10 +2,18 @@
 	"users": [
 		{
 			"id": "351574671109521410",
-			"wallet": 0,
-			"bank": 500,
+			"wallet": 61,
+			"bank": 428,
 			"name": "Vinh",
-			"cooldowns": {}
+			"cooldowns": {
+				"beg": 1625136745274
+			},
+			"inventory": [
+				{
+					"item": "Penis",
+					"amount": 10000
+				}
+			]
 		},
 		{
 			"id": "385460963517661194",
@@ -65,10 +73,11 @@
 		},
 		{
 			"id": "473191715411329035",
-			"wallet": 3138,
+			"wallet": 100,
 			"bank": 0,
 			"name": "Max",
-			"cooldowns": {}
+			"cooldowns": {},
+			"inventory": []
 		}
 	],
 	"totalMoney": 0

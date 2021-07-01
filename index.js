@@ -14,13 +14,40 @@ var log = "";
 var logCounter = 0;
 ReadJSONData();
 
+
+///////// SHITTY AWFUL HORRIBLE WAY TO IMPORT FILES BUT REPL HAS FORCED MY HAND ////////////
+var filesToImport = ["test.js"];
+
+for(var i = 0; i < filesToImport.length; i++) {
+  var file = filesToImport[i];
+  console.log(file);
+  var script = fs.readFileSync("./" + file).toString();
+  eval(script);
+}
+
+
 var adminIDs = ["473191715411329035", "351574671109521410"];
 var ansonID = "236727649114914817";
 
 
-///IMPORTANT CHANGE FOR DIFFERENT BRANCHES ////////////////
-var version = "experimental"; //master or experimental
-////////////////////////////////////////////////////
+///IMPORTANT SETTINGS ////////////////
+const version = "experimental"; //master or experimental
+const logAllMessages = true;
+const messagesPerLog = 1;
+
+//////////////////////////////////////
+
+
+var shop = [
+  {name: "Gamer-Chan", price : 42543123, stock : 3, description : "One of a kind"},
+  {name: "A kiss from Anson", price : 1000, stock: "infinite", description : "A kiss from bestie westie!"},
+  {name: "Certificate of Wealth", price : 1000000000, stock : 1, description : "You're too rich"},
+  {name: "Anson in a dress", price : 250000, stock : 5, description : "An exclusive picture of Anson in a dress will be DM'd to you"},
+  {name: "Anson's League Password", price : 100000000000000, stock : 1, description : "You get Anson's Account lol"},
+  {name: "Anson's League Username", price : 1000000, stock : 1, description: "You get Anson's account username"},
+  {name: "Holy Bible", price : 60, stock : 666, description: "You need Jesus in your life"},
+  {name: "Money", price: 100, stock: "infinite", description: "Not quite free money, but its money"}
+]
 
 client.on("ready", function() {
   print("Ready!");
@@ -29,11 +56,16 @@ client.on("ready", function() {
 })
 
 
-
 client.on('message', msg => {      ///MESSAGE HANDLER
   if (msg.author == client.user.id) return;
   var rawMessage = msg.content;
   var message = rawMessage.toLowerCase();
+
+  if(logAllMessages) {
+    var name = msg.guild.member(msg.author).displayName;
+    var logMessage = "#" + msg.channel.name + " | " + name + ": " + rawMessage;
+    print(logMessage, {logToConsole: false, logToFile: true});
+  }
 
   try {
     if (message == "!error") {
@@ -137,10 +169,12 @@ client.on('message', msg => {      ///MESSAGE HANDLER
         ] 
         if (selectionChance >= 50) {
           msg.reply(quotes[GetRandomInt(0, quotes.length-1)]);
+          return;
         }
         else if (selectionChance < 50) {
           if(version == "master") msg.react("<:AmongUs:856421087419432980>");
           if(version == "experimental") msg.react("<:dappernick:859225132119883777>")
+          return;
         }
       }
     }
@@ -185,8 +219,6 @@ client.on('message', msg => {      ///MESSAGE HANDLER
       msg.channel.send("Step " + name);
       return;
     }
-    
-    
 
     if (message.includes("!femboyanson")) {
       var images = [
@@ -624,6 +656,42 @@ client.on('message', msg => {      ///MESSAGE HANDLER
       return;
     }
 
+    if (["!bag", "!inv", "!inventory"].includes(message)) {
+      var user = database.users[GetIndexFromUserID(msg.author.id)];
+      if(!user.inventory) {
+        user.inventory = [];
+      }
+      var inventory = user.inventory;
+      
+      var embed = new Discord.MessageEmbed();
+      embed.setTitle("Inventory");
+      for(item in inventory) {
+        name = inventory[item].item;
+        amount = inventory[item].amount;
+        embed.addField(name, amount);
+      }
+      if(inventory.length == 0) {
+        embed.setDescription("Your inventory is empty!");
+      }
+      msg.channel.send(embed);
+
+      SaveDataToJSON();
+      return;
+    }
+
+    if (message.substring(0, 6) == "!shop") {
+      var embed = new Discord.MessageEmbed();
+      embed.setTitle("Shop");
+
+      for (item in shop) {
+          name = shop[item].name;
+          price = shop[item].price;
+          desc = shop[item].description;
+
+          embed.addField(name + ", "+ price + " coins", desc, true);
+      }
+      msg.channel.send(embed);
+    }
 
     if (["!leaderboard", "!lb"].includes(DivideByWhitespace(message)[0])) {
       var users = database.users;
@@ -869,8 +937,8 @@ function DivideByWhitespace(string) {
   return string.split(" ").filter(function(i) { return i });
 }
 
-function print(message, type, logMessage = true) {
-  if (logMessage) {
+function print(message, settings = {logToConsole: true, logToFile: false}, type) {
+  if (settings.logToFile) {
     var d = new Date();
     var hours = ("0" + d.getHours()).slice(-2);
     var minutes = ("0" + d.getMinutes()).slice(-2);
@@ -880,20 +948,20 @@ function print(message, type, logMessage = true) {
   }
 
   if (type == "error") {
-    console.error(message);
-    if (logMessage) {
+    if(settings.logToConsole)console.error(message);
+    if (settings.logToFile) {
       log += "Error: " + message + "\n";
       logCounter++;
     }
   }
   else {
-    console.log(message);
-    if (logMessage) {
+    if(settings.logToConsole) console.log(message);
+    if (settings.logToFile) {
       log += message + "\n";
       logCounter++;
     }
   }
-  if (logMessage && logCounter > 0) {
+  if (settings.logToFile && logCounter > messagesPerLog - 1) {
     fs.appendFileSync("log.txt", log);
     log = "";
     logCounter = 0;
@@ -903,5 +971,5 @@ function print(message, type, logMessage = true) {
 function OnError(error, message) {
   message.channel.send("Oh no! looks like i ran into a little bit of a problem!");
   print("An error occured due to the message: \"" + message.content + "\"");
-  print(error, "error");
+  print(error, {logToConsole: true, logToFile: true}, "error");
 }
