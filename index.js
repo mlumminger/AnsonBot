@@ -267,7 +267,6 @@ client.on('message', msg => {      ///MESSAGE HANDLER
 
     if (message == "!help") {
       var substrings = DivideByWhitespace(message);
-      var request = substrings[1];
       var embed = new Discord.MessageEmbed();
 
       embed.setTitle("Help Menu");
@@ -430,7 +429,7 @@ client.on('message', msg => {      ///MESSAGE HANDLER
             user.wallet -= num;
           }
         }
-        SetCooldown(msg.author.id, "beg", 0.25);
+        SetCooldown(msg.author.id, "beg", 0.10);
       }
       SaveDataToJSON();
       return;
@@ -702,6 +701,28 @@ client.on('message', msg => {      ///MESSAGE HANDLER
       return;
     }
 
+    if (message.substring(0,5) == "!buy ") {
+      var substrings = DivideByWhitespace(message);
+      var item = substrings[1];
+      var amount = Math.floor(Number(substrings[2]));
+      var users = database.users
+      var res = buy_this(msg.author, item, amount)
+
+      if (!res[0]) {
+        if (res[1] == 1) {
+          msg.channel.send("that object isn't there bestie!")
+          return;
+        }
+        if (res[1] == 2) {
+           msg.channel.send("you don't have enough money in your wallet to buy " + amount + " " + item + " bestie westie!")
+           return;
+        }
+      }
+    
+      msg.channel.send("You just bought " + amount + " " + item);
+      return;
+    }
+
     if (["!leaderboard", "!lb"].includes(DivideByWhitespace(message)[0])) {
       var users = database.users;
       var leader_board = []
@@ -734,7 +755,12 @@ client.on('message', msg => {      ///MESSAGE HANDLER
       var embed = new Discord.MessageEmbed();
       embed.setTitle("Coinflip");
       embed.setColor(0xffffff * heads); //White if heads, black if tails
-      
+      if (user.cooldowns["slots"] > Date.now()) {
+        var diff = GetDateDifference(user.cooldowns["slots"], Date.now());
+        msg.channel.send("Sowwy, but you cant gamble yet! Try gambling again in " + diff.seconds + " seconds!");
+        return;
+      }
+
       if (DivideByWhitespace(message)[1]) { //If a second argument is specified
         var amount = DivideByWhitespace(message)[1];
         
@@ -749,6 +775,7 @@ client.on('message', msg => {      ///MESSAGE HANDLER
               user.wallet -= amount;
               embed.addField("The coin landed on Tails!", "You lost " + amount + " coins! Your balance is now " + user.wallet, true);
             }
+            SetCooldown(msg.author.id, "slots", 0.15);
           }
           else {
             msg.channel.send("Thats not a valid amount uwu");
@@ -767,6 +794,7 @@ client.on('message', msg => {      ///MESSAGE HANDLER
                 user.wallet -= amount;
                 embed.addField("The coin landed on Tails!", "You lost " + amount + " coins! Your balance is now " + user.wallet, true);
               }
+              SetCooldown(msg.author.id, "slots", 0.15);
             }
             else {
               msg.channel.send("You're too broke to bet that much!");
@@ -800,6 +828,12 @@ client.on('message', msg => {      ///MESSAGE HANDLER
       var index = GetIndexFromUserID(msg.author.id, true, msg);
       var user = database.users[index];
       var embed = new Discord.MessageEmbed();
+
+      if (user.cooldowns["slots"] > Date.now()) {
+        var diff = GetDateDifference(user.cooldowns["slots"], Date.now());
+        msg.channel.send("Sowwy, but you cant gamble yet! Try gambling again in " + diff.seconds + " seconds!");
+        return;
+      }
 
       if (amount == "all") {
         amount = user.wallet;
@@ -843,7 +877,7 @@ client.on('message', msg => {      ///MESSAGE HANDLER
       }
 
       msg.channel.send(embed);
-
+      SetCooldown(msg.author.id, "slots", 0.15);
       SaveDataToJSON();
       return;
     }
@@ -981,4 +1015,59 @@ function OnError(error, message) {
   message.channel.send("Oh no! looks like i ran into a little bit of a problem!");
   print("An error occured due to the message: \"" + message.content + "\"");
   print(error, {logToConsole: true, logToFile: true}, "error");
+}
+
+function buy_this(user, item_name, amount) {
+  var item_name = item_name.toLowerCase();
+  var name_ = null;
+
+  for (item in shop) {
+    var name = item[item].name
+    name = name.toLowerCase();
+    if (name == item_name) {
+      name_ = name
+      var price = item[item].price
+      break
+    }
+  }
+
+  if (name_ == null) {
+    return [false, 1]
+  }
+
+  cost = price*amount
+
+  users = database.users
+  bal = user.wallet
+
+  if (bal < cost) {
+    return [false, 2]
+  }
+
+  try {
+    var index = 0;
+    var t = null
+    for (thing in users.inventory) {
+      var n = thing[thing].item
+      if (n == item_name) {
+        var old_amt = thing[thing].amount
+        var new_amt = old_amt + amount
+        users[index].inventory.amount = new_amt
+        var t = 1;
+        break
+      }
+      index++
+    }
+    if (t == null) {
+      var obj = {"item": item_name, "amount" : amount}
+      users.inventory.push(obj)
+    }
+  }
+  catch {
+    var obj = {"item":item_name , "amount" : amount}
+    users.inventory = [obj]
+  }
+  user.wallet -= -1*cost
+  SaveDataToJSON();
+  return [true, "Worked"]
 }

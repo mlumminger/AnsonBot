@@ -2,11 +2,12 @@
 	"users": [
 		{
 			"id": "351574671109521410",
-			"wallet": 61,
-			"bank": 428,
+			"wallet": 867,
+			"bank": 283,
 			"name": "Vinh",
 			"cooldowns": {
-				"beg": 1625136745274
+				"beg": 1625177303692,
+				"slots": 1625173496079
 			},
 			"inventory": [
 				{
@@ -73,10 +74,12 @@
 		},
 		{
 			"id": "473191715411329035",
-			"wallet": 100,
+			"wallet": 351,
 			"bank": 0,
 			"name": "Max",
-			"cooldowns": {},
+			"cooldowns": {
+				"beg": 1625171624295
+			},
 			"inventory": []
 		}
 	],

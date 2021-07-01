@@ -68,3 +68,102 @@
 [11:27:37]: #general | RandomGuy4422: !shop
 [11:27:57]: #general | RandomGuy4422: !shop
 [11:28:40]: #general | RandomGuy4422: !shop
+[20:21:08]: #general | RandomGuy4422: !shop
+[20:30:13]: #general | Geeraffe: !bal
+[20:33:29]: #general | Max: !beg
+[20:34:01]: #general | RandomGuy4422: !lb
+[20:34:01]: #general | Max: I like beg being at 1-100 but we need a consistent way to get money
+[20:34:05]: #general | RandomGuy4422: NO
+[20:34:24]: #general | RandomGuy4422: we have our shop overpriced
+[20:34:26]: #general | RandomGuy4422: SO MORE MONEY
+[20:34:28]: #general | RandomGuy4422: FROM BEG
+[20:34:28]: #general | Max: Werent we gonna do a daily work thing or something
+[20:34:37]: #general | RandomGuy4422: OR ELSE LITERALLY NO ONE WILL ME ABLE TO BUY SHIT
+[20:34:39]: #general | Max: YOU MADE THE SHOP OVERPRICED
+[20:34:49]: #general | RandomGuy4422: also maxe
+[20:34:51]: #general | RandomGuy4422: how
+[20:34:56]: #general | RandomGuy4422: do i copy the experiemental to main
+[20:35:12]: #general | Max: MAKE SOME CHEAPER ITEMS ITS NOT MY FAULT THAT THE ONLY THING WERE SELLING IS ANSONS LEAGUE PASSWORD FOR 1 TRILLION COINS
+[20:35:22]: #general | RandomGuy4422: LMAO
+[20:35:29]: #general | Max: Just copy all the files you changed for now
+[20:35:38]: #general | Max: Oh wait
+[20:35:39]: #general | Max: Nvm
+[20:35:41]: #general | RandomGuy4422: what
+[20:35:50]: #general | Max: I thought that said how do i copy
+[20:36:00]: #general | RandomGuy4422: when i copy should i change the version
+[20:36:00]: #general | Max: What did you change?
+[20:36:01]: #general | RandomGuy4422: thats it?
+[20:36:04]: #general | Max: Yea
+[20:36:13]: #general | CrafterCanet: !bal
+[20:36:16]: #general | CrafterCanet: Yay
+[20:36:19]: #general | RandomGuy4422: okay cause i already pushed
+[20:36:30]: #general | RandomGuy4422: i just need tp paste it into master
+[20:37:25]: #general | Max: I’m just sitting in bed so I’m gonna get up now and maybe I’ll start porting code over to separate files
+[21:00:04]: #general | RandomGuy4422: !slots 1
+[21:00:06]: #general | RandomGuy4422: !slots 1
+[21:00:32]: #general | RandomGuy4422: !slots wer
+[21:00:34]: #general | RandomGuy4422: !slots 4
+[21:01:09]: #general | RandomGuy4422: !slots 4
+[21:01:09]: #general | RandomGuy4422: !slots 4
+[21:01:14]: #general | RandomGuy4422: !slots 4
+[21:01:15]: #general | RandomGuy4422: !slots 4
+[21:01:19]: #general | RandomGuy4422: oop
+[21:01:59]: #general | RandomGuy4422: !slots 4
+[21:01:59]: #general | RandomGuy4422: !slots 4
+[21:04:39]: #general | RandomGuy4422: !slots 4
+[21:04:40]: #general | RandomGuy4422: !slots 4
+[21:04:47]: #general | RandomGuy4422: !slots 4
+[21:04:48]: #general | RandomGuy4422: !slots 4
+[21:40:00]: #general | CrafterCanet: !lb
+[22:00:53]: #general | RandomGuy4422: !buy
+[22:00:56]: #general | RandomGuy4422: !shop
+[22:01:00]: #general | RandomGuy4422: !bal
+[22:01:15]: #general | RandomGuy4422: !buy 1 Holy Bible
+[22:01:15]: Error: TypeError: Cannot read property 'toLowerCase' of undefined
+[22:01:18]: #general | RandomGuy4422: fuck
+[22:02:46]: #general | RandomGuy4422: !buy 1 Holy Bible
+[22:02:46]: Error: TypeError: Cannot read property 'toLowerCase' of undefined
+[22:02:59]: #general | CrafterCanet: !lb
+[22:03:26]: #general | RandomGuy4422: !buy Holy Bible 1
+[22:03:26]: Error: TypeError: Cannot read property 'toLowerCase' of undefined
+[22:04:11]: #general | RandomGuy4422: !buy Money 1
+[22:04:15]: #general | RandomGuy4422: wtf
+[22:04:19]: #general | RandomGuy4422: stop please
+[22:04:21]: #general | RandomGuy4422: !buy Money 1
+[22:04:21]: Error: TypeError: Cannot read property 'toLowerCase' of undefined
+[22:04:46]: #general | CrafterCanet: heyyyyy vinh
+[22:05:00]: #general | CrafterCanet: can you lower the chances for loosing money when begging
+[22:05:05]: #general | CrafterCanet: pweaaaasseeee
+[22:05:26]: #general | RandomGuy4422: lol wtf its literally 10%
+[22:05:29]: #general | RandomGuy4422: SO NO
+[22:05:50]: #general | CrafterCanet: I LOST SO MANY TIMES IN A ROW
+[22:05:55]: #general | CrafterCanet: ANSON HATES ME
+[22:06:17]: #general | RandomGuy4422: !beg
+[22:06:20]: #general | RandomGuy4422: wait
+[22:06:21]: #general | RandomGuy4422: !beg
+[22:06:24]: #general | RandomGuy4422: !beg
+[22:06:27]: #general | RandomGuy4422: NO
+[22:06:29]: #general | RandomGuy4422: STOP
+[22:06:30]: #general | RandomGuy4422: !beg
+[22:06:33]: #general | RandomGuy4422: !beg
+[22:07:11]: #general | RandomGuy4422: wait yeah 20% you lose money lol
+[22:07:14]: #general | RandomGuy4422: YOU JUST HAVE BAD LUCK
+[22:07:32]: #general | CrafterCanet: stfu
+[22:07:44]: #general | RandomGuy4422: !beg
+[22:07:44]: #general | RandomGuy4422: !beg
+[22:07:46]: #general | RandomGuy4422: !beg
+[22:07:58]: #general | RandomGuy4422: im lowering the cd
+[22:07:59]: #general | RandomGuy4422: for beg
+[22:08:00]: #general | RandomGuy4422: !beg
+[22:08:01]: #general | RandomGuy4422: !beg
+[22:08:02]: #general | CrafterCanet: can you lower the beg cool down
+[22:08:05]: #general | CrafterCanet: ok cool
+[22:08:06]: #general | CrafterCanet: thanks
+[22:08:16]: #general | RandomGuy4422: !beg
+[22:08:17]: #general | RandomGuy4422: !beg
+[22:08:18]: #general | RandomGuy4422: !beg
+[22:08:22]: #general | RandomGuy4422: 5
+[22:08:23]: #general | RandomGuy4422: seconds
+[22:09:02]: #general | CrafterCanet: man i actually have to grind to keep my spot as #1
+[22:09:04]: #general | CrafterCanet: thanks ving
+[22:09:06]: #general | CrafterCanet: vinh
