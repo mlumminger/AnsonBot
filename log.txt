@@ -62,3 +62,27 @@
 [07:23:34]: Ready!
 [07:35:49]: App listening at http://localhost:${port}
 [07:35:50]: Ready!
+[07:41:17]: App listening at http://localhost:${port}
+[07:41:18]: Ready!
+[07:41:37]: An admin set Vinh's balance to 10000
+[07:41:41]: An admin set Max's balance to 500
+[07:42:10]: An admin reset all cooldowns
+[07:42:16]: An admin reset all cooldowns
+[07:42:21]: An admin reset all cooldowns
+[07:42:30]: An admin reset all cooldowns
+[07:42:30]: An admin set Vinh's balance to 100000000000000
+[07:42:48]: An admin reset all cooldowns
+[07:42:58]: An admin reset all cooldowns
+[07:50:55]: An admin set Vinh's balance to 0
+[07:51:14]: An admin added 13 coins to Vinh's wallet
+[07:56:46]: App listening at http://localhost:${port}
+[07:56:47]: Ready!
+[07:56:54]: An admin set Max's balance to 100
+[07:57:02]: An admin added 1000 coins to Vinh's wallet
+[08:08:19]: App listening at http://localhost:${port}
+[08:08:20]: Ready!
+[08:08:25]: An admin set Max's balance to 1000
+[08:11:08]: App listening at http://localhost:${port}
+[08:11:08]: Ready!
+[08:11:48]: App listening at http://localhost:${port}
+[08:11:49]: Ready!
