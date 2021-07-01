@@ -15,6 +15,12 @@ var logCounter = 0;
 ReadJSONData();
 
 var adminIDs = ["473191715411329035", "351574671109521410"];
+var ansonID = "236727649114914817";
+
+
+///IMPORTANT CHANGE FOR DIFFERENT BRANCHES ////////////////
+var version = "experimental"; //master or experimental
+////////////////////////////////////////////////////
 
 client.on("ready", function() {
   print("Ready!");
@@ -35,7 +41,7 @@ client.on('message', msg => {      ///MESSAGE HANDLER
     }
 
     if (message == "!version") {
-      msg.channel.send("Experimental");
+      msg.channel.send(version);
     }
 
     /////////////// SPECIAL ADMIN COMMANDS ////////////////////////
@@ -114,6 +120,33 @@ client.on('message', msg => {      ///MESSAGE HANDLER
 
     //-------------- GENERAL STUFF-----------------////
 
+    if ((msg.author.id == 351574671109521410 && version == "experimental") || (msg.author.id == ansonID && version == "master")) {
+      var chance = GetRandomInt(0, 100); //Change for something to happen
+      
+      if(chance < 100) {
+        var selectionChance = GetRandomInt(0, 100); //Chance for different things
+        var quotes = [
+            "you're the imposter",
+            "i was born from your saliva :)",
+            "stop being such a sussy baka",
+            "uwu get out of this server bestie westie. you dont belong here",
+            "im better than you and you're not.",
+            "hey bestie! i think you should leave the esports team so i can replace you",
+            "!rob <@" + msg.author.id + ">",
+            "hey bestie! i found a pic of us! https://cdn.discordapp.com/attachments/525177389396000788/858982174979915814/image0.jpg"
+        ] 
+        if (selectionChance >= 50) {
+          msg.reply(quotes[GetRandomInt(0, quotes.length-1)]);
+        }
+        else if (selectionChance < 50) {
+          if(version == "master") msg.react("<:AmongUs:856421087419432980>");
+          if(version == "experimental") msg.react("<:dappernick:859225132119883777>")
+        }
+      }
+    }
+    
+    
+    
     if (message.includes("!femboyanson")) {
       var images = [
         'https://cdn.discordapp.com/attachments/525177389396000788/858982174979915814/image0.jpg',
@@ -577,7 +610,7 @@ client.on('message', msg => {      ///MESSAGE HANDLER
     }
 
     // --------------- Gambling --------------------- //
-
+    
     if (message.substring(0, 9) == "!coinflip") {
       var user = database.users[GetIndexFromUserID(msg.author.id, true, msg)];
       var heads = GetRandomInt(0, 1);
@@ -587,7 +620,7 @@ client.on('message', msg => {      ///MESSAGE HANDLER
       embed.setColor(0xffffff * heads); //White if heads, black if tails
       
       if (DivideByWhitespace(message)[1]) { //If a second argument is specified
-        var amount = Math.floor(Number(DivideByWhitespace(message)[1]));
+        var amount = DivideByWhitespace(message)[1];
         
         if(isNaN(amount)) { //If amount is not a number
           if(amount == "all") {             
@@ -598,25 +631,28 @@ client.on('message', msg => {      ///MESSAGE HANDLER
             return;
           }
         }
-        else if(number > 0) {
-          if (user.wallet >= amount) {
-            if (heads) {
-              embed.addField("The coin landed on Heads!", "You gained " + amount + " coins!", true);
-              user.wallet += amount;
+        else {
+          amount = Math.floor(Number(amount));
+          if(number > 0) {
+            if (user.wallet >= amount) {
+              if (heads) {
+                embed.addField("The coin landed on Heads!", "You gained " + amount + " coins!", true);
+                user.wallet += amount;
+              }
+              else {
+                embed.addField("The coin landed on Tails!", "You lost " + amount + " coins! Your balance is now " + user.wallet, true);
+                user.wallet -= amount;
+              }
             }
             else {
-              embed.addField("The coin landed on Tails!", "You lost " + amount + " coins! Your balance is now " + user.wallet, true);
-              user.wallet -= amount;
+              msg.channel.send("You're too broke to bet that much!");
+              return;
             }
           }
           else {
-            msg.channel.send("You're too broke to bet that much!");
+            msg.channel.send("Thats not a valid number, silly!")
             return;
           }
-        }
-        else {
-          msg.channel.send("Thats not a valid number, silly!")
-          return;
         }
       }
       else {
