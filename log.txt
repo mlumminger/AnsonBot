@@ -35,3 +35,36 @@
 [10:59:34]: #general | Max: !shop
 [10:59:46]: #general | Max: !shop
 [11:00:23]: #general | Max: !shop
+[11:01:35]: #general | Max: !error
+[11:01:35]: Error: TypeError: Cannot read property 'add' of undefined
+[11:01:39]: #general | RandomGuy4422: !inv
+[11:01:41]: #general | Max: !inv
+[11:01:51]: #general | Max: !error
+[11:01:51]: Error: TypeError: Cannot read property 'add' of undefined
+[11:04:34]: #general | RandomGuy4422: !shop
+[11:04:34]: Error: ReferenceError: description is not defined
+[11:06:15]: #general | RandomGuy4422: !shop
+[11:06:21]: #general | RandomGuy4422: !shop
+[11:06:21]: Error: ReferenceError: description is not defined
+[11:10:22]: #general | RandomGuy4422: !shop
+[11:10:22]: Error: ReferenceError: description is not defined
+[11:10:31]: #general | RandomGuy4422: !shop
+[11:10:31]: Error: ReferenceError: description is not defined
+[11:11:03]: #general | RandomGuy4422: !shop
+[11:11:25]: #general | RandomGuy4422: !shpo
+[11:11:27]: #general | RandomGuy4422: !shop
+[11:12:02]: #general | RandomGuy4422: !shop
+[11:15:18]: #general | RandomGuy4422: !shop
+[11:15:18]: Error: TypeError: itemValues.map is not a function
+[11:16:57]: #general | RandomGuy4422: !shop
+[11:19:51]: #general | RandomGuy4422: !shop
+[11:23:02]: #general | RandomGuy4422: !shop
+[11:23:49]: #general | RandomGuy4422: !shop
+[11:24:04]: #general | RandomGuy4422: !shop
+[11:24:31]: #general | RandomGuy4422: !lb
+[11:25:37]: #general | RandomGuy4422: !shop
+[11:26:43]: #general | RandomGuy4422: !shop
+[11:26:55]: #general | RandomGuy4422: !shop
+[11:27:37]: #general | RandomGuy4422: !shop
+[11:27:57]: #general | RandomGuy4422: !shop
+[11:28:40]: #general | RandomGuy4422: !shop

@@ -42,9 +42,9 @@ var shop = [
   {name: "Gamer-Chan", price : 42543123, stock : 3, description : "One of a kind"},
   {name: "A kiss from Anson", price : 1000, stock: "infinite", description : "A kiss from bestie westie!"},
   {name: "Certificate of Wealth", price : 1000000000, stock : 1, description : "You're too rich"},
-  {name: "Anson in a dress", price : 250000, stock : 5, description : "An exclusive picture of Anson in a dress will be DM'd to you"},
-  {name: "Anson's League Password", price : 100000000000000, stock : 1, description : "You get Anson's Account lol"},
-  {name: "Anson's League Username", price : 1000000, stock : 1, description: "You get Anson's account username"},
+  {name: "Anson in a dress", price : 250000, stock : 5, description : "Anson in a dress will be DM'd"},
+  {name: "Anson's League Password", price : 100000000000000, stock : 1, description : "Anson's password lol"},
+  {name: "Anson's League Username", price : 1000000, stock : 1, description: "Anson's  username"},
   {name: "Holy Bible", price : 60, stock : 666, description: "You need Jesus in your life"},
   {name: "Money", price: 100, stock: "infinite", description: "Not quite free money, but its money"}
 ]
@@ -587,7 +587,7 @@ client.on('message', msg => {      ///MESSAGE HANDLER
         return;
       }
       if (amount < 0) {
-        msg.channel.send("uwU you have send negative money!!");
+        msg.channel.send("uwu you have send negative money!!");
         return;
       }
       else {
@@ -682,15 +682,20 @@ client.on('message', msg => {      ///MESSAGE HANDLER
     if (message.substring(0, 6) == "!shop") {
       var embed = new Discord.MessageEmbed();
       embed.setTitle("Shop");
-
+      var shopMenu = []
       for (item in shop) {
-          name = shop[item].name;
-          price = shop[item].price;
-          desc = shop[item].description;
-
-          embed.addField(name + ", "+ price + " coins", desc, true);
-      }
+        var itemValues = {
+          name : shop[item].name,
+          price : shop[item].price,
+          desc : shop[item].description
+          }
+          shopMenu.push(itemValues)
+        }
+      embed.addField("Name", shopMenu.map(({ name }) => name + "\n"), true)
+      embed.addField("Price", shopMenu.map(({ price }) => price + "\n"), true)
+      embed.addField("Description", shopMenu.map(({ desc }) => desc + "\n"), true)  
       msg.channel.send(embed);
+      return;
     }
 
     if (["!leaderboard", "!lb"].includes(DivideByWhitespace(message)[0])) {
