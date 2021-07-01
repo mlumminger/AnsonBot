@@ -1,1 +1,2 @@
 SOME COMMANDS, SUCH AS !BAL DONT WORK WITH USERNAMES WITH SPACES IN THEM DUE TO USING 'split(" ")'
+!give command can give money that the sender doesn't have, and it doesnt recognize usernames without pinging.

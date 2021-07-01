@@ -24,13 +24,12 @@ client.on("ready", function() {
   client.user.setActivity("with E-Girls q(≧▽≦q) !help");
 })
 
-//-------------- GENERAL STUFF-----------------////
+
 
 client.on('message', msg => {      ///MESSAGE HANDLER
   if (msg.author == client.user.id) return;
   var rawMessage = msg.content;
   var message = rawMessage.toLowerCase();
-
 
   try {
     if(message == "!error") {
@@ -64,25 +63,29 @@ client.on('message', msg => {      ///MESSAGE HANDLER
       }
       var substrings = DivideByWhitespace(message);
       var targetIndex = GetIndexFromPingOrName(substrings[1]);
-      var amount = Number(substrings[2]);
+      var amount = Math.floor(Number(substrings[2]));
 
-      if(targetIndex > -1 && amount) {
-        var target = database.users[targetIndex];
-        target.wallet += amount;
-        if(amount >= 0) {
-          msg.channel.send("Added " + amount + " coins to " + target.name + "'s wallet");
-          print("An admin added " + amount + " coins to " + target.name + "'s wallet");
-        }
-        else {
-          msg.channel.send("Subtracted " + Math.abs(amount) + " coins froms " + target.name + "'s wallet");
-          print("An admin removed " + Math.abs(amount) + " coins from " + target.name);
-        }
-        SaveDataToJSON();
+      if(isNaN(amount)) {
+        msg.channel.send("That amount is not valid");
         return;
+      }
+      else if(targetIndex < 0) {
+        msg.channel.send("Target not found");
+        return;
+      }
+
+      var target = database.users[targetIndex];
+      target.wallet += amount;
+      if(amount >= 0) {
+        msg.channel.send("Added " + amount + " coins to " + target.name + "'s wallet");
+        print("An admin added " + amount + " coins to " + target.name + "'s wallet");
       }
       else {
-        return;
+        msg.channel.send("Subtracted " + Math.abs(amount) + " coins froms " + target.name + "'swallet");
+        print("An admin removed " + Math.abs(amount) + " coins from " + target.name);
       }
+      SaveDataToJSON();
+      return;
     }
     if(message.substring(0, 10) == "!setcoins ") {
       if(!adminIDs.includes(msg.author.id)) { //Only let admins use this command
@@ -91,9 +94,14 @@ client.on('message', msg => {      ///MESSAGE HANDLER
       }
       var substrings = DivideByWhitespace(message);
       var targetIndex = GetIndexFromPingOrName(substrings[1]);
-      var amount = Number(substrings[2]);
+      var amount = Math.floor(Number(substrings[2]));
 
-      if(targetIndex > -1 && amount) {
+      if(isNaN(amount)) {
+        msg.channel.send("That amount is not valid");
+        return;
+      }
+
+      if(targetIndex > -1) {
         var target = database.users[targetIndex];
         target.wallet = amount;
         print("An admin set " + target.name + "'s balance to " + amount);
@@ -106,8 +114,21 @@ client.on('message', msg => {      ///MESSAGE HANDLER
       }
     }
 
+//-------------- GENERAL STUFF-----------------////
 
-
+    if(message.substring(0, 12) == "!femboyanson") {
+      var images = [
+            'https://cdn.discordapp.com/attachments/525177389396000788/858982174979915814/image0.jpg',
+            'https://cdn.discordapp.com/attachments/525177389396000788/858982175281250314/image1.jpg',
+            'https://cdn.discordapp.com/attachments/525177389396000788/858982175604998154/image2.jpg',
+            'https://cdn.discordapp.com/attachments/525177389396000788/858982176255377408/image3.png',
+            'https://cdn.discordapp.com/attachments/525177389396000788/858982176720814100/image4.jpg',
+            'https://cdn.discordapp.com/attachments/525177389396000788/858982177027260426/image5.jpg',
+            'https://cdn.discordapp.com/attachments/525177389396000788/858982177278001152/image6.jpg'
+              ]
+      msg.channel.send(images[GetRandomInt(0, images.length)])
+      return;  
+    }
 
     if (message.includes(" rights")) {
       var rightsString = message.split(" rights")[0];
@@ -338,7 +359,7 @@ client.on('message', msg => {      ///MESSAGE HANDLER
     }
 
     if(message.substring(0, 10) == "!withdraw ") {
-      var amount = Number(message.slice(10));
+      var amount = Math.floor(Number(message.slice(10)));
       var index = GetIndexFromUserID(msg.author.id, true, msg);
       var user = database.users[index];
       
@@ -363,7 +384,7 @@ client.on('message', msg => {      ///MESSAGE HANDLER
       }
       else if(!amount) {
         msg.channel.send("that isnt a valid number!")
-        return
+        return;
       }
       SaveDataToJSON();
       return;
@@ -371,7 +392,7 @@ client.on('message', msg => {      ///MESSAGE HANDLER
 
 
     if(message.substring(0, 9) == "!deposit ") {
-      var amount = Number(message.slice(9));
+      var amount = Math.floor(Number(message.slice(9)));
       var index = GetIndexFromUserID(msg.author.id, true, msg);
       var user = database.users[index];
 
@@ -401,30 +422,34 @@ client.on('message', msg => {      ///MESSAGE HANDLER
 
     if (message.includes("!give ") || message.includes("!send ")) {
       var substrings = DivideByWhitespace(message);
-      var targetID = GetIDFromPing(substrings[1]);
-      var target = GetDiscordUserFromID(targetID);
-      var amount = Number(substrings[2]);
-      var negativeChance = GetRandomInt(0, 100);
+      var targetIndex = GetIndexFromPingOrName(substrings[1]);
+      var amount = Math.floor(Number(substrings[2]));
 
-      var targetIndex = GetIndexFromUserID(targetID);
+      if(isNaN(amount)) {
+        msg.channel.send("UWU you didn't enter a valid amount")
+        return;
+      }
+
       var senderIndex = GetIndexFromUserID(msg.author.id, true, msg);
+      var sender = database.users[senderIndex];
+      var target = database.users[targetIndex];
+ 
       if(targetIndex < 0) {
         msg.channel.send("The user you are trying to send coins is not registered");
         return;
       }
-
-      if (amount < 1) {
-        msg.channel.send("Amount specified is invalid");
+      if(amount > sender.wallet) {
+        msg.channel.send("You dont have enough money to give them that much");
+        return;
+      }
+      if (amount < 0) {
+        msg.channel.send("uwU you have send negative money!!");
         return;
       }
       else {
-        if (targetID > 0) {
-          var targetUser = database.users[targetIndex];
-          targetUser.wallet += amount;
-          var sender = database.users[senderIndex];
-          sender.wallet -= amount;
-          msg.channel.send(sender.name + " gave " + amount + " coins to " + targetUser.name);
-        }
+        target.wallet += amount;
+        sender.wallet -= amount;
+        msg.channel.send(sender.name + " gave " + amount + " coins to " + target.name);
       }
       SaveDataToJSON();
       return;
@@ -432,7 +457,6 @@ client.on('message', msg => {      ///MESSAGE HANDLER
     
     if (message.substring(0, 5) == "!rob ") {
       var thief = database.users[GetIndexFromUserID(msg.author.id, true, msg)];
-      
 
       if(thief.cooldowns["rob"] > Date.now()) {
         var diff = GetDateDifference(thief.cooldowns["rob"], Date.now());
@@ -457,34 +481,32 @@ client.on('message', msg => {      ///MESSAGE HANDLER
         }
       }
 
-      var amount = GetRandomInt(0, target.wallet / 2);
-      var negativeChance = GetRandomInt(0, 100);
-      
+      var amount = GetRandomInt(target.wallet * 0.25, target.wallet * 0.75);
+      var failChance = GetRandomInt(0, 100);
+      var thiefAmount = GetRandomInt(thief.wallet * 0.25, thief.wallet + 1000);
+
       if (target.wallet < 100) {
         msg.channel.send("This person is super poor! It's not worth it");
         return;
       }
-      else if (negativeChance > 25) {
+      
+      // 75% Chance for the robbery to work
+      else if (failChance > 25) {
         target.wallet -= amount;
         thief.wallet += amount;
         msg.channel.send("u stole their money like how i stole vinh’s virginity :drooling_face:! \n" + thief.name + " stole " + amount + " coins from " + target.name);
         SetCooldown(msg.author.id, "rob", 5);
       }
-      else if (negativeChance > 15) {
-        if (thief.wallet < amount) {
-          target.wallet += amount;
-          thief.bank -= amount;
-          msg.channel.send("oh my gosh bestie! they stole ur money instead! what comes goes around just like the blades on a chainsaw huh :joy: :joy: :joy: :joy: :joy: :joy: :joy: :joy: :joy: :joy: \n" + target.name + " beat " + thief.name + " up and stole " + amount + " coins!");
-        }
-        else {
-          target.wallet += amount;
-          thief.wallet -= amount;
-          msg.channel.send(target.name + " beat " + thief.name + " up and stole " + amount + " coins!");
-        }
+      // 10% Chance for victim to rob you back
+      else if (failChance > 15) {
+        target.wallet += thiefAmount;
+        thief.wallet -= thiefAmount;
+        msg.channel.send("oh my gosh bestie! they stole ur money instead! what comes goes around!! :joy: :joy: :joy: :joy: :joy: :joy: :joy: :joy: :joy: :joy: \n" + target.name + " beat " + thief.name + " up and stole " + thiefAmount + " coins!");
       }
+      // Otherwise the police catches you and charges a fine
       else {
-        thief.wallet -= amount;
-        msg.channel.send("oh no bestie! u made a big fucky wucky and the police caught u :tired_face: uh-oh you lose " + amount + " coins.");
+        thief.wallet -= thiefAmount;
+        msg.channel.send("oh no bestie! u made a big fucky wucky and the police caught u :tired_face: uh-oh you lose " + thiefAmount + " coins.");
       }
       SaveDataToJSON();
       return;
@@ -528,7 +550,7 @@ client.on('message', msg => {      ///MESSAGE HANDLER
       embed.setColor(0xffffff * heads); //White if heads, black if tails
 
       if(DivideByWhitespace(message)[1]) {
-        var amount = Number(DivideByWhitespace(message)[1]);
+        var amount = Math.floor(Number(DivideByWhitespace(message)[1]));
         if(amount) {
           if(user.wallet >= amount) {
             if(heads) {
@@ -579,7 +601,8 @@ client.on('message', msg => {      ///MESSAGE HANDLER
           return;
         }
       }
-      else if(Number(amount)) {
+      else if(!isNaN(amount)) {
+        amount = Math.floor(amount);
         if (amount > user.wallet) {
           msg.channel.send("UWU you don't have any money");
           return;
@@ -750,5 +773,5 @@ function print(message, type, logMessage = true) {
 function OnError(error, message) {
   message.channel.send("Oh no! looks like i ran into a little bit of a problem!");
   print("An error occured due to the message: \"" + message.content + "\"");
-  //print(error, "error");
+  print(error, "error");
 }

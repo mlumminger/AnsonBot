@@ -1,3 +1,64 @@
 [10:18:48]: App listening at http://localhost:${port}
 [10:18:49]: Ready!
 [10:18:55]: Clearing recent messages
+[10:23:04]: App listening at http://localhost:${port}
+[10:23:04]: Ready!
+[10:23:08]: An error occured due to the message: "!error"
+[10:23:15]: Clearing recent messages
+[06:41:54]: App listening at http://localhost:${port}
+[06:41:55]: Ready!
+[06:43:26]: App listening at http://localhost:${port}
+[06:43:26]: Ready!
+[06:44:05]: An error occured due to the message: "!give <@!473191715411329035> 100000000000"
+[06:47:19]: An error occured due to the message: "!give <@!351574671109521410> -100000000000"
+[06:50:35]: App listening at http://localhost:${port}
+[06:50:36]: App listening at http://localhost:${port}
+[06:50:37]: Ready!
+[06:53:20]: App listening at http://localhost:${port}
+[06:53:20]: Ready!
+[06:54:06]: App listening at http://localhost:${port}
+[06:54:06]: Ready!
+[06:54:36]: An admin removed 59 coins from Vinh
+[06:54:42]: An admin added 111 coins to Max's wallet
+[06:54:50]: An admin set Vinh's balance to 10
+[06:57:19]: App listening at http://localhost:${port}
+[06:57:19]: Ready!
+[06:57:22]: An admin set Max's balance to 0
+[06:57:26]: An error occured due to the message: "!give vinh 10"
+[06:57:26]: Error: ReferenceError: targetUser is not defined
+[06:57:44]: App listening at http://localhost:${port}
+[06:58:14]: App listening at http://localhost:${port}
+[06:58:15]: Ready!
+[06:58:40]: An admin set Max's balance to 0
+[06:59:18]: App listening at http://localhost:${port}
+[06:59:18]: Ready!
+[06:59:24]: An admin set Max's balance to 0
+[06:59:38]: An admin set Max's balance to 1000
+[07:00:11]: App listening at http://localhost:${port}
+[07:00:12]: Ready!
+[07:00:18]: An admin set Max's balance to 0
+[07:00:25]: An admin set Max's balance to 10000
+[07:00:34]: An admin set Max's balance to 1000
+[07:03:13]: App listening at http://localhost:${port}
+[07:03:13]: Ready!
+[07:04:09]: App listening at http://localhost:${port}
+[07:04:09]: Ready!
+[07:05:30]: App listening at http://localhost:${port}
+[07:05:30]: Ready!
+[07:09:46]: App listening at http://localhost:${port}
+[07:09:46]: Ready!
+[07:13:18]: App listening at http://localhost:${port}
+[07:13:19]: Ready!
+[07:13:25]: An admin set Vinh's balance to -10999
+[07:13:26]: An admin set Max's balance to 1023010231
+[07:15:29]: An admin set Max's balance to 0
+[07:20:48]: App listening at http://localhost:${port}
+[07:20:49]: Ready!
+[07:21:17]: An admin set Max's balance to 0
+[07:21:21]: An admin set Torno's balance to 0
+[07:21:46]: An admin set Max's balance to 10000
+[07:22:05]: An admin set Max's balance to 1000
+[07:23:34]: App listening at http://localhost:${port}
+[07:23:34]: Ready!
+[07:35:49]: App listening at http://localhost:${port}
+[07:35:50]: Ready!
