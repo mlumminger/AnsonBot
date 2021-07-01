@@ -272,7 +272,7 @@ client.on('message', msg => {      ///MESSAGE HANDLER
 
       embed.setTitle("Help Menu");
       embed.addFields(
-        { name: "!name", value: "Changes your nickname", inline: true },
+        { name: "!name", value: "Changes your nickname / Bad", inline: true },
         { name: "!beg", value: "Begs Anson for money", inline: true },
         { name: "!deposit", value: "Deposits your wallet balance to the bank (!deposit ###)", inline: true },
         { name: "!withdraw", value: "Wtihdraw money from your bank to your wallet (!withdraw ###)", inline: true },
@@ -284,6 +284,10 @@ client.on('message', msg => {      ///MESSAGE HANDLER
         { name: "!day", value: "GAME WEEK DAY!", inline: true },
         { name: "!bal", value: "Gives Information on your Wallet and Bank balance", inline: true },
         { name: "!leaderboard or !lb", value: "Gives Information on the Top Sugar Daddies", inline: true },
+        { name: "!coinflip", value: "50/50 Chance of winning money", inline: true },
+        { name: "!shop", value: "Display the items that are available for sale", inline: true },
+        { name: "!inventory or !inv", value: "See all the items you have in your inventory", inline: true },
+        { name: "!femboyanson", value: "Anson Pics owo", inline: true },
         { name: "!coinflip", value: "50/50 Chance of winning money", inline: true }
       );
       embed.setColor(0x38c96e);
@@ -382,7 +386,7 @@ client.on('message', msg => {      ///MESSAGE HANDLER
     if (message == "!beg") {
       var index = GetIndexFromUserID(msg.author.id, true, msg);
       var user = database.users[index];
-      var num = GetRandomInt(0, 100);
+      var num = GetRandomInt(0, 300);
       var negativeChance = GetRandomInt(0, 100);
 
       if (user.cooldowns["beg"] > Date.now()) {
