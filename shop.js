@@ -28,6 +28,7 @@ function shopCommands() {
       name : itemUser.name,
       count : amount
     }
+
     //Try to get index of item with same name in user's inventory
     var existingIndex = user.inventory.findIndex(function(item) { 
       return itemUser.name == itemToSubtract.name;
@@ -147,7 +148,7 @@ function shopCommands() {
 
     for(item in inventory) {
       var index = Number(item) + 1;
-      name = "[" + index + "] " + inventory[item].name;
+      let name = "[" + index + "] " + inventory[item].name;
       count = inventory[item].count;
       embed.addField(name, count);
     }
