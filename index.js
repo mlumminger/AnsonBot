@@ -6,8 +6,8 @@ app.listen(port, () => print('App listening at http://localhost:${port}'));
 const Discord = require("discord.js");
 const client = new Discord.Client();
 
-// client.login(process.env(Discord_Token))
-client.login("ODU5Njg0MTk5MTI0MTcyODEx.YNwRTQ.JFEwqc69EQTCkBHeicib353YJww")
+client.login(process.env(Discord_Token))
+
 var fs = require('fs');
 var database;
 var log = "";
