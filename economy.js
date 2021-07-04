@@ -11,7 +11,7 @@ function economyCommands() {
       }
 
       user.wallet += daily;
-      msg.channel.send("yay! bestie you got `" + daily + "`. your balance is now `" + user.wallet + "`");
+      msg.channel.send("yay!a bestie you got `" + daily + "`. your balance is now `" + user.wallet + "`");
       SetCooldown(msg.author.id, "daily", 86400000);
       SaveDataToJSON();
       return;
@@ -118,8 +118,8 @@ function economyCommands() {
       return;
     }
 
-    if (message.substring(0, 10) == `${pre}withdraw`) {
-      var amount = message.slice(10);
+    if (message.substring(0, 9) == `${pre}withdraw`) {
+      var amount = DivideByWhitespace(message)[1]
       var index = GetIndexFromUserID(msg.author.id, true, msg);
       var user = database.users[index];
 
@@ -147,11 +147,9 @@ function economyCommands() {
           user.bank -= amount;
           if (version == "master") {
             msg.channel.send("you transfered " + amount + " coins to your wallet! <:Felix_Cheer:857108979423772743>"); // CHANGE ID FOR EMOTE OR ADD FUNCTION TO GET ID 
-            return;
           }
           else {
             msg.channel.send("you transfered " + amount + " coins to your bank! <:Felix_Cheer:859541940722204683>"); // CHANGE ID FOR EMOTE OR ADD FUNCTION TO GET ID 
-            return;
           }
         }
         else {
@@ -175,8 +173,8 @@ function economyCommands() {
     }
 
 
-    if (message.substring(0, 9) == `${pre}deposit `) {
-      var amount = message.slice(9);
+    if (message.substring(0, 8) == `${pre}deposit`) {
+      var amount = DivideByWhitespace(message)[1]
       var index = GetIndexFromUserID(msg.author.id, true, msg);
       var user = database.users[index];
 
@@ -206,11 +204,9 @@ function economyCommands() {
           user.wallet -= amount;
           if (version == "master") {
             msg.channel.send("you transfered " + amount + " coins to your bank! <:Felix_Cheer:857108979423772743> ");
-            return;
           }
           else {
             msg.channel.send("you transfered " + amount + " coins to your bank! <:Felix_Cheer:859541940722204683>"); // CHANGE ID FOR EMOTE OR ADD FUNCTION TO GET ID 
-            return;
           }
         }
         else {

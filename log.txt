@@ -22,3 +22,26 @@
 [04:25:03]: #general | Max: !leave
 [04:25:06]: #general | Max: ~leave
 [04:25:14]: #general | Max: ~help
+[12:23:12]: #general | Vinnie: ~beg
+[12:23:14]: #general | Vinnie: ~bal
+[12:23:18]: #general | Vinnie: ~deposit all
+[12:23:20]: #general | Vinnie: ~bal
+[12:24:23]: #general | Vinnie: ~withdraw all
+[12:24:26]: #general | Vinnie: ~bal
+[12:25:08]: #general | Vinnie: ~daily
+[12:27:07]: #general | Vinnie: ~bal
+[12:27:12]: #general | Vinnie: ~deposit all
+[12:27:14]: #general | Vinnie: ~bal
+[12:27:20]: #general | Vinnie: ~withdraw all
+[12:27:24]: #general | Vinnie: ~bal
+[12:28:25]: #general | Vinnie: ~deposit all
+[12:28:27]: #general | Vinnie: ~bal
+[12:30:39]: #general | Vinnie: ~send <@!694609292019368009> 10000
+[12:30:48]: #general | Vinnie: ~withdraw 20000
+[12:30:50]: #general | Vinnie: ~bal
+[12:31:01]: #general | Vinnie: ~send <@!694609292019368009> 10000
+[12:31:06]: #general | Vinnie: ~bal nick
+[12:31:27]: #general | Vinnie: ~send nick 2000
+[12:31:31]: #general | Vinnie: ~bal nick
+[12:31:38]: #general | Vinnie: ~deposit all
+[12:31:40]: #general | Vinnie: ~bal
