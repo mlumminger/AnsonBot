@@ -19,7 +19,7 @@ const pre = "~"
 
 
 if(version == "master") {
-  client.login(process.env['DISCORD_TOKEN']);
+  client.login(process.env['DiscordToken']);
 }
 if(version == "experimental") {
   client.login(process.env.DISCORD_TOKEN);
