@@ -1,0 +1,757 @@
+
+[09:51:45]: #general | Max: aa
+[10:20:41]: #general | RandomGuy4422: !inv
+[10:21:21]: #general | RandomGuy4422: !inv
+[10:22:05]: #general | RandomGuy4422: !inv
+[10:23:10]: #general | RandomGuy4422: !inv
+[10:25:30]: #general | RandomGuy4422: !bag
+[10:28:59]: #general | RandomGuy4422: !inv
+[10:29:10]: #general | Max: !inv
+[10:29:11]: #general | Max: 😦
+[10:29:13]: #general | Max: no penis
+[10:30:55]: #general | RandomGuy4422: !inv
+[10:30:55]: #general | Max: !inv
+[10:31:20]: #general | Max: !inv
+[10:31:32]: #general | Max: !inv
+[10:31:49]: #general | Max: !inv
+[10:32:02]: #general | RandomGuy4422: !inv
+[10:32:39]: #general | Max: !inv
+[10:51:58]: #general | RandomGuy4422: !shop
+[10:52:01]: #general | RandomGuy4422: !shop
+[10:52:04]: #general | RandomGuy4422: !shop
+[10:52:10]: #general | RandomGuy4422: !beg
+[10:52:16]: #general | RandomGuy4422: !inv
+[10:54:04]: #general | Max: !error
+[10:54:04]: Error: TypeError: Cannot read property 'add' of undefined
+[10:54:58]: #general | RandomGuy4422: !shop
+[10:55:59]: #general | Max: a
+[10:56:00]: #general | RandomGuy4422: hi
+[10:56:02]: #general | Max: a
+[10:56:03]: #general | Max: a
+[10:56:03]: #general | Max: a
+[10:56:04]: #general | Max: a
+[10:57:29]: #general | RandomGuy4422: !shop
+[10:58:08]: #general | RandomGuy4422: !shop
+[10:59:34]: #general | Max: !shop
+[10:59:46]: #general | Max: !shop
+[11:00:23]: #general | Max: !shop
+[11:01:35]: #general | Max: !error
+[11:01:35]: Error: TypeError: Cannot read property 'add' of undefined
+[11:01:39]: #general | RandomGuy4422: !inv
+[11:01:41]: #general | Max: !inv
+[11:01:51]: #general | Max: !error
+[11:01:51]: Error: TypeError: Cannot read property 'add' of undefined
+[11:04:34]: #general | RandomGuy4422: !shop
+[11:04:34]: Error: ReferenceError: description is not defined
+[11:06:15]: #general | RandomGuy4422: !shop
+[11:06:21]: #general | RandomGuy4422: !shop
+[11:06:21]: Error: ReferenceError: description is not defined
+[11:10:22]: #general | RandomGuy4422: !shop
+[11:10:22]: Error: ReferenceError: description is not defined
+[11:10:31]: #general | RandomGuy4422: !shop
+[11:10:31]: Error: ReferenceError: description is not defined
+[11:11:03]: #general | RandomGuy4422: !shop
+[11:11:25]: #general | RandomGuy4422: !shpo
+[11:11:27]: #general | RandomGuy4422: !shop
+[11:12:02]: #general | RandomGuy4422: !shop
+[11:15:18]: #general | RandomGuy4422: !shop
+[11:15:18]: Error: TypeError: itemValues.map is not a function
+[11:16:57]: #general | RandomGuy4422: !shop
+[11:19:51]: #general | RandomGuy4422: !shop
+[11:23:02]: #general | RandomGuy4422: !shop
+[11:23:49]: #general | RandomGuy4422: !shop
+[11:24:04]: #general | RandomGuy4422: !shop
+[11:24:31]: #general | RandomGuy4422: !lb
+[11:25:37]: #general | RandomGuy4422: !shop
+[11:26:43]: #general | RandomGuy4422: !shop
+[11:26:55]: #general | RandomGuy4422: !shop
+[11:27:37]: #general | RandomGuy4422: !shop
+[11:27:57]: #general | RandomGuy4422: !shop
+[11:28:40]: #general | RandomGuy4422: !shop
+[20:21:08]: #general | RandomGuy4422: !shop
+[20:30:13]: #general | Geeraffe: !bal
+[20:33:29]: #general | Max: !beg
+[20:34:01]: #general | RandomGuy4422: !lb
+[20:34:01]: #general | Max: I like beg being at 1-100 but we need a consistent way to get money
+[20:34:05]: #general | RandomGuy4422: NO
+[20:34:24]: #general | RandomGuy4422: we have our shop overpriced
+[20:34:26]: #general | RandomGuy4422: SO MORE MONEY
+[20:34:28]: #general | RandomGuy4422: FROM BEG
+[20:34:28]: #general | Max: Werent we gonna do a daily work thing or something
+[20:34:37]: #general | RandomGuy4422: OR ELSE LITERALLY NO ONE WILL ME ABLE TO BUY SHIT
+[20:34:39]: #general | Max: YOU MADE THE SHOP OVERPRICED
+[20:34:49]: #general | RandomGuy4422: also maxe
+[20:34:51]: #general | RandomGuy4422: how
+[20:34:56]: #general | RandomGuy4422: do i copy the experiemental to main
+[20:35:12]: #general | Max: MAKE SOME CHEAPER ITEMS ITS NOT MY FAULT THAT THE ONLY THING WERE SELLING IS ANSONS LEAGUE PASSWORD FOR 1 TRILLION COINS
+[20:35:22]: #general | RandomGuy4422: LMAO
+[20:35:29]: #general | Max: Just copy all the files you changed for now
+[20:35:38]: #general | Max: Oh wait
+[20:35:39]: #general | Max: Nvm
+[20:35:41]: #general | RandomGuy4422: what
+[20:35:50]: #general | Max: I thought that said how do i copy
+[20:36:00]: #general | RandomGuy4422: when i copy should i change the version
+[20:36:00]: #general | Max: What did you change?
+[20:36:01]: #general | RandomGuy4422: thats it?
+[20:36:04]: #general | Max: Yea
+[20:36:13]: #general | CrafterCanet: !bal
+[20:36:16]: #general | CrafterCanet: Yay
+[20:36:19]: #general | RandomGuy4422: okay cause i already pushed
+[20:36:30]: #general | RandomGuy4422: i just need tp paste it into master
+[20:37:25]: #general | Max: I’m just sitting in bed so I’m gonna get up now and maybe I’ll start porting code over to separate files
+[21:00:04]: #general | RandomGuy4422: !slots 1
+[21:00:06]: #general | RandomGuy4422: !slots 1
+[21:00:32]: #general | RandomGuy4422: !slots wer
+[21:00:34]: #general | RandomGuy4422: !slots 4
+[21:01:09]: #general | RandomGuy4422: !slots 4
+[21:01:09]: #general | RandomGuy4422: !slots 4
+[21:01:14]: #general | RandomGuy4422: !slots 4
+[21:01:15]: #general | RandomGuy4422: !slots 4
+[21:01:19]: #general | RandomGuy4422: oop
+[21:01:59]: #general | RandomGuy4422: !slots 4
+[21:01:59]: #general | RandomGuy4422: !slots 4
+[21:04:39]: #general | RandomGuy4422: !slots 4
+[21:04:40]: #general | RandomGuy4422: !slots 4
+[21:04:47]: #general | RandomGuy4422: !slots 4
+[21:04:48]: #general | RandomGuy4422: !slots 4
+[21:40:00]: #general | CrafterCanet: !lb
+[22:00:53]: #general | RandomGuy4422: !buy
+[22:00:56]: #general | RandomGuy4422: !shop
+[22:01:00]: #general | RandomGuy4422: !bal
+[22:01:15]: #general | RandomGuy4422: !buy 1 Holy Bible
+[22:01:15]: Error: TypeError: Cannot read property 'toLowerCase' of undefined
+[22:01:18]: #general | RandomGuy4422: fuck
+[22:02:46]: #general | RandomGuy4422: !buy 1 Holy Bible
+[22:02:46]: Error: TypeError: Cannot read property 'toLowerCase' of undefined
+[22:02:59]: #general | CrafterCanet: !lb
+[22:03:26]: #general | RandomGuy4422: !buy Holy Bible 1
+[22:03:26]: Error: TypeError: Cannot read property 'toLowerCase' of undefined
+[22:04:11]: #general | RandomGuy4422: !buy Money 1
+[22:04:15]: #general | RandomGuy4422: wtf
+[22:04:19]: #general | RandomGuy4422: stop please
+[22:04:21]: #general | RandomGuy4422: !buy Money 1
+[22:04:21]: Error: TypeError: Cannot read property 'toLowerCase' of undefined
+[22:04:46]: #general | CrafterCanet: heyyyyy vinh
+[22:05:00]: #general | CrafterCanet: can you lower the chances for loosing money when begging
+[22:05:05]: #general | CrafterCanet: pweaaaasseeee
+[22:05:26]: #general | RandomGuy4422: lol wtf its literally 10%
+[22:05:29]: #general | RandomGuy4422: SO NO
+[22:05:50]: #general | CrafterCanet: I LOST SO MANY TIMES IN A ROW
+[22:05:55]: #general | CrafterCanet: ANSON HATES ME
+[22:06:17]: #general | RandomGuy4422: !beg
+[22:06:20]: #general | RandomGuy4422: wait
+[22:06:21]: #general | RandomGuy4422: !beg
+[22:06:24]: #general | RandomGuy4422: !beg
+[22:06:27]: #general | RandomGuy4422: NO
+[22:06:29]: #general | RandomGuy4422: STOP
+[22:06:30]: #general | RandomGuy4422: !beg
+[22:06:33]: #general | RandomGuy4422: !beg
+[22:07:11]: #general | RandomGuy4422: wait yeah 20% you lose money lol
+[22:07:14]: #general | RandomGuy4422: YOU JUST HAVE BAD LUCK
+[22:07:32]: #general | CrafterCanet: stfu
+[22:07:44]: #general | RandomGuy4422: !beg
+[22:07:44]: #general | RandomGuy4422: !beg
+[22:07:46]: #general | RandomGuy4422: !beg
+[22:07:58]: #general | RandomGuy4422: im lowering the cd
+[22:07:59]: #general | RandomGuy4422: for beg
+[22:08:00]: #general | RandomGuy4422: !beg
+[22:08:01]: #general | RandomGuy4422: !beg
+[22:08:02]: #general | CrafterCanet: can you lower the beg cool down
+[22:08:05]: #general | CrafterCanet: ok cool
+[22:08:06]: #general | CrafterCanet: thanks
+[22:08:16]: #general | RandomGuy4422: !beg
+[22:08:17]: #general | RandomGuy4422: !beg
+[22:08:18]: #general | RandomGuy4422: !beg
+[22:08:22]: #general | RandomGuy4422: 5
+[22:08:23]: #general | RandomGuy4422: seconds
+[22:09:02]: #general | CrafterCanet: man i actually have to grind to keep my spot as #1
+[22:09:04]: #general | CrafterCanet: thanks ving
+[22:09:06]: #general | CrafterCanet: vinh
+[22:09:27]: #general | RandomGuy4422: !inv
+[22:09:35]: #general | RandomGuy4422: do you want penises
+[22:09:46]: #general | CrafterCanet: I WANT A COMMAND
+[22:09:50]: #general | CrafterCanet: here me out....
+[22:10:02]: #general | CrafterCanet: !@User is looking sus
+[22:10:28]: #general | RandomGuy4422: LMAO
+[22:10:33]: #general | RandomGuy4422: WTF
+[22:10:35]: #general | RandomGuy4422: NOOOOOO
+[22:10:36]: #general | CrafterCanet: PLEASE
+[22:10:38]: #general | CrafterCanet: PLEASE
+[22:10:40]: #general | CrafterCanet: I NEED IT
+[22:10:45]: #general | RandomGuy4422: CATHOLIC SERVER
+[22:10:46]: #general | RandomGuy4422: BAD
+[22:10:49]: #general | RandomGuy4422: !beg
+[22:10:52]: #general | RandomGuy4422: !inv
+[22:11:05]: #general | CrafterCanet: ok can i have my birht off command back then
+[22:11:07]: #general | RandomGuy4422: !inv
+[22:11:14]: #general | RandomGuy4422: lets have a child
+[22:11:14]: Error: TypeError: Cannot read property 'member' of undefined
+[22:11:14]: #general | CrafterCanet: but alter it slightly
+[22:11:17]: #general | RandomGuy4422: shit
+[22:11:33]: #general | CrafterCanet: and make it respond to any message with birth-off
+[22:11:45]: #general | RandomGuy4422: lets have a child
+[22:11:45]: Error: TypeError: Cannot read property 'member' of undefined
+[22:11:48]: #general | RandomGuy4422: IT BROKE
+[22:11:49]: #general | RandomGuy4422: LMAO
+[22:12:04]: #general | RandomGuy4422: im having it respond to "child"\
+[22:12:20]: #general | CrafterCanet: oh thats funny and even better
+[22:52:21]: #general | Geeraffe: Iinv
+[22:52:22]: #general | Geeraffe: !inv
+[22:57:49]: #general | Geeraffe: !beg
+[23:05:52]: #general | Geeraffe: !beg
+[23:05:54]: #general | Geeraffe: !bal
+[23:06:00]: #general | Geeraffe: !coinflip 212
+[23:06:06]: #general | Geeraffe: !coinflip 212
+[23:06:11]: #general | Geeraffe: !coinflip 400
+[23:06:17]: #general | Geeraffe: !deposit 8324
+[23:06:21]: #general | Geeraffe: !deposit 824]
+[23:06:25]: #general | Geeraffe: !deposit 824
+[23:06:53]: #general | Geeraffe: !beg
+[23:07:16]: #general | Geeraffe: !slots 41
+[23:11:25]: #general | Geeraffe: !beg
+[23:11:28]: #general | Geeraffe: !bal
+[23:11:33]: #general | Geeraffe: !coinflip 160
+[23:13:34]: #general | Geeraffe: !be
+[23:13:35]: #general | Geeraffe: !beg
+[23:13:39]: #general | Geeraffe: !slots 19
+[23:17:59]: #general | Geeraffe: !beg
+[23:18:04]: #general | Geeraffe: !coinflip 246
+[23:22:40]: #general | Max: <@!351574671109521410> yo vinh did you see that essay hudson sent
+[23:23:28]: #general | Max: if repl becomes a problem I can always host on a raspberry pi or something
+[23:23:34]: #general | Max: or just on one of our computers
+[23:27:05]: #general | RandomGuy4422: yeah you host it then
+[23:27:22]: #general | RandomGuy4422: we just code it and then you can host by copy and pasting it into youor own file
+[23:28:26]: #general | Max: here join voice im too lazy to type
+[23:28:33]: #general | RandomGuy4422: its already a problem so instead you can host it on your own
+[23:28:48]: #general | RandomGuy4422: IM TOO LAZY TO TLAK
+[23:28:51]: #general | Max: cringe
+[23:28:52]: #general | Max: ok
+[23:29:12]: #general | Max: so keeping it up 24/7 isnt an issue
+[23:29:31]: #general | RandomGuy4422: yeah its if someone is being a baddie
+[23:29:34]: #general | RandomGuy4422: and gets banned
+[23:29:42]: #general | RandomGuy4422: wait no if the bot gets banned
+[23:29:44]: #general | Max: if the bot gets ip banned, we can switch to hosting on computer
+[23:29:49]: #general | Max: i have node.js installed
+[23:30:01]: #general | Max: and I can move to a pi but that would take a bit
+[23:30:05]: #general | RandomGuy4422: why not switch now?
+[23:30:17]: #general | RandomGuy4422: because "if someone is running a user bot on their service and gets banned, everyone on that IP will be banned. Including you."
+[23:30:19]: #general | RandomGuy4422: so uh
+[23:30:22]: #general | RandomGuy4422: switch now
+[23:30:23]: #general | RandomGuy4422: STFU
+[23:30:25]: #general | RandomGuy4422: ANSON BOT
+[23:30:26]: #general | Max: LMAO
+[23:30:33]: #general | Max: cause its annoying to setup and a pain to keep running
+[23:30:47]: #general | RandomGuy4422: IF THE BOTS GETS BANNED WE DO TOO
+[23:30:50]: #general | Max: i gotta find a nice out of the way spot connected to ethernet and then it gets hot sometimes and shit id rather not
+[23:30:51]: #general | RandomGuy4422: SO WE HAVE TO SWITCH LOL
+[23:30:51]: #general | Max: what?
+[23:31:01]: #general | RandomGuy4422: "everyone on that IP will be banned. Including you."
+[23:31:20]: #general | Max: yeah the bot will get banned if someone else using the same ip with repl gets their bot ip banned
+[23:31:28]: #general | Max: WE wont get banned
+[23:31:44]: #general | Max: its because repl hosts from the same few ips so a discord ip ban could effect our bot
+[23:32:11]: #general | RandomGuy4422: welp
+[23:32:15]: #general | RandomGuy4422: i left hudson on read
+[23:32:18]: #general | Max: lol
+[23:32:21]: #general | RandomGuy4422: and i dont feel like responding
+[23:32:24]: #general | RandomGuy4422: say thanbks
+[23:32:26]: #general | RandomGuy4422: to him
+[23:32:26]: #general | RandomGuy4422: for me
+[23:32:28]: #general | RandomGuy4422: please
+[23:32:29]: #general | Max: yea me neither though
+[23:32:45]: #general | Max: also i have no clue what an epherameal file system is or whatever and why that would be an issue
+[23:32:56]: #general | RandomGuy4422: search it up duh
+[23:33:08]: #general | Max: i did and the results didnt really tell me anything or mention anything that bad
+[23:33:24]: #general | Max: he says "This means any file you saved via your bot will be overwritten when you next launch." but like we are saving to files so i dont know what hes talking about
+[23:33:58]: #general | RandomGuy4422: psh asak him
+[23:33:58]: #general | RandomGuy4422: dm
+[23:37:44]: #general | Max: lmaooo
+[23:37:53]: #general | Max: I cant dm him
+[23:37:53]: #general | Max: so
+[23:38:00]: #general | RandomGuy4422: whatt
+[23:38:02]: #general | RandomGuy4422: wdym
+[23:38:10]: #general | Max: well I was gonna send him this
+[23:38:10]: #general | Max: vinh and I read what you sent and I'm not super concerned about most of the points, and I can always switch to hosting on a raspberry pi if issues come up. The only thing i was confused about was the ephemeral file system point, could you explain in a lil more detail what you mean by that and why that could be an issue?
+[23:38:11]: #general | RandomGuy4422: have the bot dm him
+[23:38:12]: #general | RandomGuy4422: forehead
+[23:38:18]: #general | Max: but
+[23:38:29]: #general | RandomGuy4422: LOL
+[23:38:38]: #general | Max: he put everything on like maximum privacy or whatever so I cant dm him without being friends
+[23:38:40]: #general | RandomGuy4422: <#846222971668004877> THEN
+[23:38:54]: #general | Max: oh and guess what?
+[23:39:00]: #general | Max: HE DOESNT ACCEPT FRIEND REQUESTS
+[23:39:02]: #general | RandomGuy4422: LMAOOOOOO
+[23:39:07]: #general | Max: LIKE WHAT??
+[23:39:15]: #general | Max: IS HE A CELEBRITY WITH TOO MANY HOES TRYNA TALK TO HIM
+[23:39:54]: #general | RandomGuy4422: TALK
+[23:39:57]: #general | RandomGuy4422: IN GENERAL I GUESS
+[23:43:48]: #general | Max: ok yeah i dm'd him
+[23:49:09]: #general | Max: ok well apparently from what hes seen there could be problems with files being pulled from git not saving properly or something?
+[23:49:26]: #general | Max: so far I havent seen any issue with file saving but also we havent used a ton of git
+[23:51:26]: #general | Max: anyway i think we should be good besides performance inevitably getting worse as we add more complicated stuff
+[00:01:50]: #general | RandomGuy4422: well its literally only on one server
+[00:02:06]: #general | RandomGuy4422: performance would be an issue if we had it on multiple servers
+[00:02:17]: #general | RandomGuy4422: but its only on one and we have like 10 people using it only
+[07:51:27]: #general | Max: also i think i fixed the reaction bug try getting a reaction with a command
+[07:52:29]: #general | Max: !buy
+[07:53:12]: #general | RandomGuy4422: vc?
+[07:53:29]: #general | Max: sure
+[07:53:36]: #general | Max: !buy
+[07:53:59]: #general | RandomGuy4422: !shop
+[07:57:26]: #general | Max: !day <@!385460963517661194>
+[07:57:34]: #general | Max: !day
+[07:57:49]: #general | RandomGuy4422: WOOOOOOO
+[07:57:51]: #general | CrafterCanet: I know lessss gooooooii
+[07:57:55]: #general | RandomGuy4422: i think its time
+[07:57:57]: #general | RandomGuy4422: ill get on
+[07:57:57]: #general | CrafterCanet: I was trying to sleep
+[07:57:59]: #general | CrafterCanet: Wtf
+[07:58:02]: #general | Max: oh sorry lol
+[07:58:04]: #general | RandomGuy4422: !day
+[07:58:05]: #general | RandomGuy4422: !day
+[07:58:06]: #general | CrafterCanet: I have a test tomorrow
+[07:58:08]: #general | RandomGuy4422: !day
+[07:58:09]: #general | CrafterCanet: But whatever
+[07:58:09]: #general | RandomGuy4422: non
+[07:58:10]: #general | RandomGuy4422: no
+[07:58:10]: #general | Max: !day
+[07:58:14]: #general | RandomGuy4422: i think you want to play fortnite
+[07:58:14]: #general | Max: sucks to be you lmao
+[07:58:16]: #general | CrafterCanet: !day
+[07:58:19]: #general | RandomGuy4422: !day
+[07:58:21]: #general | CrafterCanet: Your right
+[08:16:45]: #general | Max: [1] Gamer Chan
+[08:39:05]: #general | Max: !beg
+[08:39:07]: #general | Max: !shop
+[08:39:07]: Error: ReferenceError: shop is not defined
+[08:41:53]: #general | RandomGuy4422: !shop
+[08:41:53]: Error: ReferenceError: shopCommands is not defined
+[08:42:53]: #general | Max: !shop
+[08:42:53]: Error: ReferenceError: dividedMessage is not defined
+[08:42:54]: #general | RandomGuy4422: !shop
+[08:42:54]: Error: ReferenceError: dividedMessage is not defined
+[08:43:18]: #general | Max: a
+[08:43:18]: Error: ReferenceError: message is not defined
+[08:47:01]: #general | Max: !shop
+[08:47:06]: #general | Max: !buy
+[08:47:11]: #general | Max: !buy 0
+[08:47:13]: #general | Max: !buy 1
+[08:47:17]: #general | Max: !buy 2
+[08:51:32]: #general | Max: !shop
+[08:52:16]: #general | RandomGuy4422: !shop
+[08:53:26]: #general | Max: !shop
+[08:58:10]: #general | Max: !beg
+[08:58:13]: #general | RandomGuy4422: !shop
+[08:58:33]: #general | RandomGuy4422: !shop
+[08:59:04]: #general | Max: 
+[08:59:30]: #general | RandomGuy4422: https://discord.com/channels/846222971668004874/846222971668004877/860442743426514956
+[09:04:33]: #general | Max: !shop
+[09:05:20]: #general | Max: !shop
+[09:09:06]: #general | Max: !buy 1
+[09:16:26]: #general | Max: !beg
+[09:16:27]: #general | Max: !bal
+[09:16:33]: #general | Max: !shop
+[09:16:41]: #general | Max: !buy 2
+[09:16:53]: #general | RandomGuy4422: !buy 1
+[09:16:56]: #general | RandomGuy4422: !bal
+[09:22:32]: #general | RandomGuy4422: !setcoins vinh 0
+[09:22:45]: #general | RandomGuy4422: !buy 1
+[09:24:40]: #general | RandomGuy4422: !buy 1
+[09:25:27]: #general | RandomGuy4422: !buy 1
+[09:26:47]: #general | RandomGuy4422: !buy 1
+[09:26:51]: #general | RandomGuy4422: !bal
+[09:26:58]: #general | RandomGuy4422: !setcoins 0
+[09:27:04]: #general | RandomGuy4422: !setcoins vinh 0
+[09:27:08]: #general | RandomGuy4422: !buy 1
+[09:27:12]: #general | RandomGuy4422: !bal
+[09:27:41]: #general | RandomGuy4422: !setcoins vinh 0
+[09:27:44]: #general | RandomGuy4422: !buy 1
+[09:27:53]: #general | RandomGuy4422: !bal
+[09:28:04]: #general | RandomGuy4422: !setcoins vinh 1000000000000
+[09:28:08]: #general | RandomGuy4422: !buy 1
+[09:28:08]: Error: TypeError: msg.channel.end is not a function
+[09:28:31]: #general | RandomGuy4422: !shop
+[09:28:48]: #general | RandomGuy4422: !buy 1 1
+[09:29:09]: #general | RandomGuy4422: !buy 1 1
+[09:29:20]: #general | RandomGuy4422: !inv
+[09:30:20]: #general | RandomGuy4422: !inv
+[09:30:23]: #general | RandomGuy4422: YO
+[09:40:01]: #general | RandomGuy4422: !inv
+[09:40:09]: #general | RandomGuy4422: !shop
+[09:40:17]: #general | RandomGuy4422: !buy hol bible 100
+[09:40:33]: #general | RandomGuy4422: !buy 7 10000000
+[09:40:37]: #general | RandomGuy4422: !buy 7 -1
+[09:40:40]: #general | RandomGuy4422: ?!
+[09:40:43]: #general | RandomGuy4422: !inv
+[09:40:53]: #general | RandomGuy4422: i have a negative item
+[09:42:29]: #general | RandomGuy4422: !buy 7 -1
+[09:42:33]: #general | RandomGuy4422: !buy -1 3
+[09:42:36]: #general | RandomGuy4422: !shop
+[09:42:46]: #general | RandomGuy4422: !buy 5 1
+[09:42:50]: #general | RandomGuy4422: !bal
+[09:43:00]: #general | RandomGuy4422: !addcoins vinh 1000000000000
+[09:43:07]: #general | RandomGuy4422: !buy 5 1
+[09:43:11]: #general | RandomGuy4422: no
+[09:44:33]: #general | RandomGuy4422: lets have a child
+[09:44:33]: Error: TypeError: Cannot read property 'member' of undefined
+[09:45:40]: #general | RandomGuy4422: lets have a child
+[09:45:40]: Error: TypeError: Cannot read property 'displayName' of null
+[09:46:13]: #general | RandomGuy4422: lets have a child
+[09:46:13]: Error: TypeError: Cannot read property 'displayName' of null
+[09:46:49]: #general | RandomGuy4422: What are you doing?
+[09:46:57]: #general | RandomGuy4422: What are you doing?
+[09:47:04]: #general | RandomGuy4422: What are you doing?
+[09:47:12]: #general | RandomGuy4422: lets have a child
+[09:47:12]: Error: TypeError: Cannot read property 'displayName' of null
+[09:47:48]: #general | RandomGuy4422: angy
+[09:47:51]: #general | RandomGuy4422: angey
+[09:47:53]: #general | RandomGuy4422: kat
+[09:48:27]: #general | RandomGuy4422: !femboyanson
+[09:48:44]: #general | RandomGuy4422: What are you doing?
+[09:49:17]: #general | RandomGuy4422: lets have a child
+[09:49:17]: Error: TypeError: Cannot read property 'displayName' of null
+[09:50:03]: #general | RandomGuy4422: lets have a child
+[09:50:16]: #general | Vinnie: lets have a child
+[09:50:24]: #general | Vinnie: child
+[09:50:34]: #general | Vinnie: What are you doing?
+[09:51:14]: #general | Vinnie: What are you doing?
+[09:51:15]: #general | Vinnie: What are you doing?
+[09:51:38]: #general | Vinnie: What are you doing?
+[09:52:43]: #general | Vinnie: What are you doing?
+[10:04:26]: #general | Vinnie: !slots 100
+[10:08:08]: #general | Vinnie: !beg
+[10:08:14]: #general | Vinnie: !deposit 100
+[01:41:31]: #general | Vinnie: !ahop
+[01:41:33]: #general | Vinnie: !shop
+[01:42:10]: #general | Vinnie: 1. lower gamble cd to 3secs
+2. There’s a bug with coin flip to get you out of debt
+3.Add counter in slots to increase chance
+The more people do slots the higher the chance the next time someone gambles
+4. make gamer-chan 300k
+[01:42:15]: #general | Vinnie: 
+[01:42:26]: #general | Vinnie: !buy 1 3
+[01:42:36]: #general | Vinnie: !buy 7 10000
+[01:42:41]: #general | Vinnie: !buy 7 -10
+[01:42:46]: #general | Vinnie: !buy 7 ert
+[01:42:51]: #general | Vinnie: !buy 7 rwieherwajklrewahjraew
+[01:42:57]: #general | Vinnie: !buy 7 1000000
+[01:43:02]: #general | Vinnie: !buy 7 100
+[01:43:05]: #general | Vinnie: !inv
+[01:43:09]: #general | Vinnie: penis
+[01:43:27]: #general | Vinnie: add a way to send gift to other people's inventory
+[01:43:32]: #general | Vinnie: 
+[01:51:38]: #general | Vinnie: !shop
+[01:51:44]: #general | Vinnie: <@!385460963517661194>
+[01:51:49]: #general | CrafterCanet: Hi
+[01:51:53]: #general | Vinnie: SOON
+[01:51:56]: #general | CrafterCanet: Yay
+[01:51:58]: #general | Vinnie: i will export this to master
+[01:52:02]: #general | Vinnie: !inv
+[01:52:20]: #general | CrafterCanet: You have gamer Chan
+[01:52:22]: #general | CrafterCanet: I want her
+[01:52:25]: #general | CrafterCanet: Give her back
+[01:52:43]: #general | Vinnie: o h
+[01:52:44]: #general | Vinnie: okay
+[01:52:46]: #general | Vinnie: no
+[01:52:47]: #general | Vinnie: i want
+[01:52:48]: #general | Vinnie: stop
+[01:52:51]: #general | Vinnie: bad
+[01:52:57]: #general | Vinnie: shane
+[01:52:57]: #general | Vinnie: shane
+[01:53:02]: #general | Vinnie: wtf
+[01:53:13]: #general | Vinnie: shane should there be 1 gamer-chan or an infinite amount
+[01:53:36]: #general | CrafterCanet: One
+[01:53:39]: #general | CrafterCanet: Ohhhh
+[01:53:45]: #general | CrafterCanet: That’s the amount available
+[01:53:53]: #general | CrafterCanet: I thought that was your inventory
+[01:53:56]: #general | CrafterCanet: One only
+[01:57:02]: #general | Vinnie: it is my inventory
+[01:57:07]: #general | Vinnie: i have one gamer chan LMAO
+[01:57:15]: #general | Vinnie: i souhld probably say the name
+[01:58:03]: #general | Vinnie: !inv
+[01:58:09]: #general | Vinnie: lmao
+[01:58:52]: #general | Vinnie: !inv
+[01:59:05]: #general | Vinnie: !inv
+[02:05:13]: #general | Vinnie: sus
+[02:05:18]: #general | Vinnie: why so sus
+[02:05:29]: #general | Vinnie: !ivn
+[02:05:30]: #general | Vinnie: !iv
+[02:05:32]: #general | Vinnie: !inv
+[02:05:35]: #general | Vinnie: !sell
+[02:05:36]: #general | Vinnie: wait
+[02:05:38]: #general | Vinnie: !shop
+[02:05:43]: #general | Vinnie: !buy 5
+[02:05:49]: #general | Vinnie: !bal
+[02:06:00]: #general | Vinnie: !addcoins vinh 1000000000000000000000000000000000000000
+[02:06:04]: #general | Vinnie: !buy 5
+[02:06:10]: #general | Vinnie: !buy 5
+[02:06:15]: #general | Vinnie: !buy 6
+[02:06:24]: #general | Vinnie: !buy 4 10
+[02:06:27]: #general | Vinnie: !buy 4
+[02:06:32]: #general | Vinnie: !inv
+[02:06:41]: #general | Vinnie: lmao
+[02:06:44]: #general | CrafterCanet: U u u u
+[02:06:50]: #general | CrafterCanet: Took my hot waifu gf
+[02:06:55]: #general | CrafterCanet: How how how how could u
+[02:07:00]: #general | Vinnie: !dw when i add the sell command
+[02:07:04]: #general | Vinnie: ill out her back in stocl
+[02:07:09]: #general | CrafterCanet: Kkk
+[02:07:11]: #general | Vinnie: put
+[02:07:19]: #general | Vinnie: SHANE IS A KKK MEMBER?!@
+[02:07:19]: #general | CrafterCanet: Uhhhh
+[02:07:20]: #general | Vinnie: ?!?!1
+[02:07:21]: #general | Vinnie: ?!!?!??
+[02:07:21]: #general | Vinnie: 1
+[02:07:22]: #general | Vinnie: ?!
+[02:07:23]: #general | Vinnie: ?
+[02:07:24]: #general | CrafterCanet: Damn
+[02:07:26]: #general | Vinnie: banne
+[02:07:27]: #general | CrafterCanet: Caught
+[02:07:33]: #general | CrafterCanet: Yes I started it
+[02:07:37]: #general | CrafterCanet: I went back in the past
+[02:07:42]: #general | CrafterCanet: With my time machine
+[02:08:10]: #general | Vinnie: giveme a timemachine so i can bully my younger self
+[02:22:20]: #general | CrafterCanet: Already did it for you
+[02:22:32]: #general | CrafterCanet: IT WAS ME VINH
+[02:22:41]: #general | Vinnie: YOU WERE MY BULLY?
+[02:22:55]: #general | CrafterCanet: I CAUSED YOUR CHILD HOOD TRAUMA
+[02:23:02]: #general | Vinnie: you meanie <a:vangryping:729738847512166451>
+[02:23:27]: #general | CrafterCanet: Lmao
+[02:23:31]: #general | CrafterCanet: You asked for it
+[02:23:34]: #general | CrafterCanet: Literally
+[06:46:34]: #general | Vinnie: !day
+[06:47:11]: #general | Vinnie: !day
+[06:47:58]: #general | Vinnie: !day
+[06:49:35]: #general | CrafterCanet: Your bots dumb
+[06:50:07]: #general | Vinnie: stfu
+[06:50:09]: #general | Vinnie: IM TRIYN
+[06:50:11]: #general | Vinnie: TO FIX
+[06:50:12]: #general | Vinnie: \LOL
+[06:50:14]: #general | CrafterCanet: Idc
+[06:50:18]: #general | CrafterCanet: Like
+[06:50:19]: #general | Vinnie: !dau
+[06:50:40]: #general | Vinnie: !day
+[06:50:47]: #general | CrafterCanet: 🎆🎇
+[06:51:44]: #general | CrafterCanet: 🪙🙏😁
+[06:52:33]: #general | CrafterCanet: Ya know
+[06:54:26]: #general | CrafterCanet: Child birth-off
+[06:54:35]: #general | CrafterCanet: let’s have a child birth-off
+[06:55:00]: #general | CrafterCanet: lets have a child birth-off
+[06:55:05]: #general | CrafterCanet: Heh
+[06:55:10]: #general | CrafterCanet: Boobs
+[06:55:16]: #general | CrafterCanet: 🍒
+[07:00:56]: #general | Vinnie: hewheheheh
+[07:01:57]: #general | CrafterCanet: !day
+[07:02:01]: #general | CrafterCanet: It is
+[07:02:44]: #general | Vinnie: finally
+[07:06:46]: #general | CrafterCanet: GUN DAY LET US VENTURE TO A CENTER OF EDUCATION IN ORDER TO COMENCE THE SACRED RITUAL FOR SUCH A WONDEROUS DAY
+[07:14:01]: #general | Vinnie: !beg
+[07:14:02]: #general | Vinnie: !beg
+[07:14:13]: #general | Vinnie: !beg
+[07:14:14]: #general | Vinnie: !beg
+[07:14:19]: #general | Vinnie: !resetcd
+[07:14:21]: #general | Vinnie: !beg
+[07:14:21]: #general | Vinnie: !beg
+[07:14:34]: #general | Vinnie: !beg
+[07:14:34]: #general | Vinnie: !beg
+[07:14:47]: #general | Vinnie: !beg
+[07:14:47]: #general | Vinnie: !beg
+[07:14:51]: #general | Vinnie: !beg
+[07:14:52]: #general | Vinnie: !beg
+[07:24:48]: #general | Vinnie: !inv
+[07:25:45]: #general | Vinnie: !inv
+[07:26:14]: #general | Vinnie: !inv
+[07:27:01]: #general | Vinnie: !inv
+[07:27:17]: #general | Vinnie: !sell 6
+[07:27:38]: #general | Vinnie: !sell 6
+[07:27:41]: #general | Vinnie: !bal
+[07:28:26]: #general | Vinnie: !setcoins 0
+[07:28:30]: #general | Vinnie: !setcoins vinh 0
+[07:28:34]: #general | Vinnie: !inv
+[07:28:44]: #general | Vinnie: !sell 3 1
+[07:28:44]: Error: TypeError: Cannot read property 'count' of undefined
+[07:30:19]: #general | Vinnie: !sell 2
+[07:30:19]: Error: TypeError: Cannot read property 'count' of undefined
+[07:37:32]: #general | Vinnie: !sell 3
+[07:37:32]: Error: TypeError: Cannot read property 'count' of undefined
+[07:39:03]: #general | Vinnie: !sell 3
+[07:39:03]: Error: TypeError: Cannot read property 'count' of undefined
+[07:39:28]: #general | Vinnie: !sell 3
+[07:39:28]: Error: TypeError: Cannot read property 'count' of undefined
+[07:45:56]: #general | Vinnie: !inv
+[07:46:56]: #general | Vinnie: !sell 6
+[07:47:00]: #general | Vinnie: !bal
+[07:47:11]: #general | Vinnie: !inv
+[07:47:28]: #general | Vinnie: !shop
+[07:50:49]: #general | Vinnie: !inv
+[07:51:12]: #general | Vinnie: !sell 3 10
+[07:51:12]: Error: TypeError: user.inventory.delete is not a function
+[07:53:00]: #general | Vinnie: !sell 3
+[07:53:00]: Error: TypeError: Cannot read property '-1' of undefined
+[07:57:32]: #general | Vinnie: !sell 3
+[07:57:32]: Error: TypeError: Cannot read property '-1' of undefined
+[07:57:49]: #general | Vinnie: !inv
+[07:57:52]: #general | Vinnie: !sell 3
+[07:57:52]: Error: TypeError: Cannot read property '-1' of undefined
+[07:58:10]: #general | Vinnie: !sell 3
+[07:58:10]: Error: TypeError: Cannot read property '-1' of undefined
+[08:04:23]: #general | Vinnie: !sell 3
+[08:04:27]: #general | Vinnie: wait
+[08:04:30]: #general | Vinnie: what
+[08:04:32]: #general | Vinnie: bal!
+[08:04:34]: #general | Vinnie: !bal
+[08:04:35]: #general | Vinnie: no
+[08:04:37]: #general | Vinnie: nono
+[08:04:44]: #general | Vinnie: !setcoins vinh 0
+[08:05:24]: #general | Vinnie: !inv
+[08:10:50]: #general | Vinnie: !inv
+[08:11:00]: #general | Vinnie: !sell 3
+[08:11:29]: #general | Vinnie: !bal
+[08:11:35]: #general | Vinnie: !setcoins vinh 0
+[08:28:05]: #general | Vinnie: !sell 3
+[08:28:05]: Error: TypeError: Cannot read property 'price' of undefined
+[08:29:48]: #general | Vinnie: !SELL 3
+[08:29:48]: Error: TypeError: Cannot read property 'price' of undefined
+[08:29:53]: #general | Vinnie: !sell 3
+[08:29:53]: Error: TypeError: Cannot read property 'price' of undefined
+[08:35:21]: #general | Vinnie: !sell 3
+[08:38:21]: #general | Vinnie: !sell 3
+[19:38:57]: #general | Vinnie: !beg
+[19:40:02]: #general | Vinnie: <@!473191715411329035> hey when you wake up or something transfer the files from experimental to main
+[19:40:11]: #general | Vinnie: ikd how to do that
+[19:55:51]: #general | Vinnie: !beg
+[19:55:52]: #general | Vinnie: !beg
+[20:00:04]: #general | Vinnie: !bal
+[20:01:20]: #general | Vinnie: !bal
+[20:01:36]: #general | Vinnie: !bal
+[20:06:11]: #general | Vinnie: !inv
+[20:06:15]: #general | Vinnie: !sell 0
+[20:06:15]: Error: TypeError: Cannot read property 'name' of undefined
+[20:07:05]: #general | Vinnie: !beg
+[20:08:10]: #general | Vinnie: !day\
+[20:08:12]: #general | Vinnie: !day
+[20:08:22]: #general | Vinnie: ._.
+[20:09:50]: #general | Vinnie: guys
+[20:09:57]: #general | Vinnie: how much should !daily be
+[20:10:04]: #general | Vinnie: a flat 500 coins?
+[20:10:12]: #general | Vinnie: 200 coins?
+[20:10:17]: #general | Vinnie: a range between 200-500
+[20:10:31]: #general | Vinnie: more rng
+[20:18:28]: #general | Geeraffe: 300-500
+[20:18:31]: #general | Geeraffe: be kind
+[20:20:46]: #general | Vinnie: o k
+[20:26:30]: #general | Vinnie: !daily
+[20:26:42]: #general | Vinnie: !beg
+[20:28:16]: #general | Vinnie: !daily
+[20:31:11]: #general | Vinnie: !daily
+[20:31:57]: #general | Vinnie: !daily
+[20:32:04]: #general | Vinnie: !resetcd
+[20:32:08]: #general | Vinnie: !daily
+[20:32:10]: #general | Vinnie: !daily
+[20:34:11]: #general | Vinnie: !daily
+[20:35:21]: #general | Vinnie: !daily
+[20:35:26]: #general | Vinnie: !resetcd
+[20:35:27]: #general | Vinnie: !daily
+[20:35:27]: #general | Vinnie: !daily
+[20:37:00]: #general | Vinnie: !resetcd
+[20:37:04]: #general | Vinnie: !daily
+[20:37:04]: #general | Vinnie: !daily
+[20:39:31]: #general | Vinnie: !resetcd
+[20:39:33]: #general | Vinnie: !daily
+[20:39:33]: #general | Vinnie: !daily
+[20:44:34]: #general | Vinnie: HEY GUYS! HOW MUCH SHOULD WEEKLY GIVE YOU?
+[20:44:37]: #general | Vinnie: A FLAT AMOUNT
+[20:44:39]: #general | Vinnie: OR A RANGE
+[20:45:50]: #general | Geeraffe: a lot
+[20:45:52]: #general | Geeraffe: flat
+[20:45:59]: #general | Geeraffe: rather not get scammed on a weekly
+[20:46:08]: #general | Geeraffe: though maybe like small rnage
+[20:50:52]: #general | Vinnie: okay so (1000, 1500)?
+[20:58:07]: #general | Vinnie: !weekly
+[20:58:12]: #general | Vinnie: !beg
+[20:58:15]: #general | Vinnie: !weekly
+[20:58:17]: #general | Vinnie: !daily
+[20:59:35]: #general | Vinnie: !weekly
+[20:59:35]: #general | Vinnie: !weekly
+[20:59:46]: #general | Vinnie: !help
+[20:59:52]: #general | Vinnie: !weekly
+[21:01:38]: #general | Vinnie: !weekly
+[21:01:43]: #general | Vinnie: !weekly
+[21:01:48]: #general | Vinnie: !weekly
+[21:01:48]: #general | Vinnie: !weekly
+[21:01:51]: #general | Vinnie: !daily
+[21:03:26]: #general | Geeraffe: !weekly
+[21:03:30]: #general | Geeraffe: yea seems good
+[21:06:23]: #general | Vinnie: !weekly
+[21:06:23]: #general | Vinnie: !weekly
+[21:06:28]: #general | Vinnie: !resetcd
+[21:06:29]: #general | Vinnie: !weekly
+[21:06:30]: #general | Vinnie: !weekly
+[21:06:38]: #general | Vinnie: !weekly
+[21:06:49]: #general | Vinnie: !daily
+[21:06:50]: #general | Vinnie: !daily
+[21:06:52]: #general | Vinnie: !daily
+[21:08:06]: #general | Vinnie: !resetcd
+[21:08:09]: #general | Vinnie: !daily
+[21:08:10]: #general | Vinnie: !daily
+[21:08:49]: #general | Vinnie: !resetcd
+[21:08:53]: #general | Vinnie: !daily
+[21:08:53]: #general | Vinnie: !daily
+[21:08:59]: #general | Vinnie: !weekly
+[21:09:00]: #general | Vinnie: !weekly
+[21:09:02]: #general | Vinnie: !weekly
+[21:09:57]: #general | Vinnie: !resetcd
+[21:10:01]: #general | Vinnie: !daily
+[21:10:01]: #general | Vinnie: !daily
+[21:10:06]: #general | Vinnie: !weekly
+[21:10:06]: #general | Vinnie: !weekly
+[21:11:13]: #general | Vinnie: !weekly
+[21:11:14]: #general | Vinnie: !weekly
+[21:11:21]: #general | Vinnie: !resetcd
+[21:11:22]: #general | Vinnie: !weekly
+[21:11:23]: #general | Vinnie: !weekly
+[21:11:26]: #general | Vinnie: !weekly
+[21:11:31]: #general | Vinnie: !weekly
+[21:16:52]: #general | Vinnie: !resetcd
+[21:16:56]: #general | Vinnie: !weekly
+[21:16:56]: #general | Vinnie: !weekly
+[21:18:41]: #general | Vinnie: !weekly
+[21:18:50]: #general | Vinnie: !resetcd
+[21:18:51]: #general | Vinnie: !weekly
+[21:18:52]: #general | Vinnie: !weekly
+[21:18:57]: #general | Vinnie: uhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
+[21:19:01]: #general | Vinnie: 23 days
+[21:20:27]: #general | Vinnie: !resetcd
+[21:20:30]: #general | Vinnie: !daily
+[21:20:30]: #general | Vinnie: !daily
+[21:22:48]: #general | Vinnie: !weekly
+[21:22:51]: #general | Vinnie: !weekly
+[21:25:13]: #general | Vinnie: !weekly
+[21:25:19]: #general | Vinnie: !resetcd
+[21:25:22]: #general | Vinnie: !weekly
+[21:25:23]: #general | Vinnie: !weekly
+[21:28:00]: #general | Vinnie: !resetcd
+[21:28:03]: #general | Vinnie: !weekly
+[21:28:04]: #general | Vinnie: !weekly
+[21:28:09]: #general | Vinnie: WTF
+[21:28:13]: #general | Vinnie: WHY IS IT 2 WEES
+[21:28:18]: #general | Vinnie: !resetcd
+[21:28:19]: #general | Vinnie: !weekly
+[21:28:20]: #general | Vinnie: !weekly
+[21:28:35]: #general | Vinnie: !weekly
+[21:28:39]: #general | Vinnie: !daily
+[21:28:40]: #general | Vinnie: !daily
+[21:33:44]: #general | Vinnie: !weekly
+[21:33:45]: #general | Vinnie: !weekly
+[21:33:49]: #general | Vinnie: !Resetcd
+[21:33:52]: #general | Vinnie: !weekly
+[21:33:52]: #general | Vinnie: !weekly
+[21:33:55]: #general | Vinnie: WHY
+[21:33:57]: #general | Vinnie: !daily
+[21:33:58]: #general | Vinnie: !daily
+[21:41:40]: #general | Vinnie: !weekly
+[21:41:40]: #general | Vinnie: !weekly
+[21:41:45]: #general | Vinnie: wow
+[21:41:51]: #general | Vinnie: !resetcd
+[21:41:52]: #general | Vinnie: !weekly
+[21:41:52]: #general | Vinnie: !weekly
+[21:53:29]: #general | Geeraffe: !weekly

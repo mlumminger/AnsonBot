@@ -1,0 +1,48 @@
+  - given people might not be active
+  - incentive to start gambling(get them hooked)
+
+COINFLIP SHOULD BE PREDICTION
+
+Add counter in slots to increase chance
+The more people do slots the higher the chance the next time someone gambles
+
+add a way to send gift to other people's inventory
+
+STOCK MARKET BABY!!!!
+
+Fix/Improve Shop Interface and Inventory
+
+A way to check other people's inventory
+
+Add achievements like having 1000 holy bibles give you "Saint?" 
+achievements could be given through roles or the embed
+MAKE A PURPOSE for people to keep playing
+
+ADD LOOT BOXES DAILY OR WEEKLY
+
+MAKE MINGAMES LIKE TICTACTOE TO WIN MONEY OR PRIZES OR GO AGAINST OTHER people
+
+MAKE HIGHLOW game
+MAKE GUESS THE NUMBER game win money from that
+
+make work command
+  - different jobs?
+  - different pay?
+
+like dankmemer it has a "search" function where its a story mode command to get money that way
+  - can be different with anson 
+  - go on a date with anson?!
+  - you can die from it
+
+"bankrob" function need starting money to start the bank rob
+  - victim NEEDS to be offline in order for it to work
+  - other people can join to rob
+  - a percentage of money is equally distributed to thieves from victim's bank (random amount)
+  - the more the people the higher success rate
+  - cannot do it alone
+
+OPTIONAL:
+  - add starting money when they start?
+  - in the slots and coinflip embed show them the percentage of their return
+add a cap to the bank?
+  - the cap increases the more you type or the type of job you have
