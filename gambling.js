@@ -15,17 +15,23 @@ function gambleCommands() {
       var amount = DivideByWhitespace(message)[1];
       
       if(isNaN(amount)) { //If amount is not a number
-        if(amount == "all") {             
+        if(amount == "all") {            
           amount = user.wallet;
-          if (heads) {
-            user.wallet += amount;
-            embed.addField("The coin landed on Heads!", "You gained " + amount + " coins! Your balance is now " + user.wallet, true);
-          }
+          if (amount > 0) {
+            if (heads) {
+              user.wallet += amount;
+              embed.addField("The coin landed on Heads!", "You gained " + amount + " coins! Your balance is now " + user.wallet, true);
+            }
+            else {
+              user.wallet -= amount;
+              embed.addField("The coin landed on Tails!", "You lost " + amount + " coins! Your balance is now " + user.wallet, true);
+            }
+              SetCooldown(msg.author.id, "slots", 0.15);
+            }
           else {
-            user.wallet -= amount;
-            embed.addField("The coin landed on Tails!", "You lost " + amount + " coins! Your balance is now " + user.wallet, true);
+            msg.channel.send("you cant bet a negative number silly baka");
+            return;
           }
-          SetCooldown(msg.author.id, "slots", 0.15);
         }
         else {
           msg.channel.send("Thats not a valid amount uwu");

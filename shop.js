@@ -4,9 +4,9 @@ function shopCommands() {
     var itemIndex = Math.floor(Number(dividedMessage[1])) - 1;
     var amount = Math.floor(Number(dividedMessage[2]));
     var itemUser = user.inventory[itemIndex];
-    var itemShop = database.shop[itemIndex]
-    var priceDeduced = itemShop.price * 0.9
-    
+    var itemShop = database.shop
+    var indexShop = null;
+
     // if amount is not specified the DEFAULT is 1
     if(isNaN(amount)) {
       amount = 1;
@@ -22,29 +22,34 @@ function shopCommands() {
       return;
     }
 
+    // Looks for the index of the item in shop to add to stock
+    //Uses if statement to compare the two strings
+    for (let i = 0; i < itemShop.length; i++) {
+      if(itemUser.name == itemShop[i].name) {
+        indexShop = i;
+      }
+    }
+
+    var priceDeduced = itemShop[indexShop].price * 0.9
     cost = priceDeduced*amount;
 
     var itemToSubtract = {
       name : itemUser.name,
       count : amount
     }
-
-    //Try to get index of item with same name in user's inventory
-    var existingIndex = user.inventory.findIndex(function(item) { 
-      return itemUser.name == itemToSubtract.name;
-    });
     
-    console.log(existingIndex)
-    if (existingIndex == -1) {
-      user.inventory.delete(inventory[existingIndex])
+    // Checks if the count of the item reaches 0, if so it removes the element from the inventory array
+    // Otherwise it just removes the amount from the stock
+    if (user.inventory[itemIndex].count - amount <= 0) {
+      user.inventory.splice(itemIndex, 1)
     }
     else {
-      user.inventory[existingIndex].count -= itemToSubtract.count;
+      user.inventory[itemIndex].count -= amount;
     }
     
-    itemShop.stock += amount;
+    itemShop[indexShop].stock += amount;
     user.wallet += cost;
-    msg.channel.send("you sold " + amount + " " + itemShop.name + "(s)");
+    msg.channel.send("you sold " + amount + " " + itemShop[indexShop].name + "(s)");
     
     SaveDataToJSON();
     return;
@@ -148,7 +153,7 @@ function shopCommands() {
 
     for(item in inventory) {
       var index = Number(item) + 1;
-      let name = "[" + index + "] " + inventory[item].name;
+      var name = "[" + index + "] " + inventory[item].name;
       count = inventory[item].count;
       embed.addField(name, count);
     }

@@ -3,6 +3,5 @@ SOME COMMANDS, SUCH AS !BAL DONT WORK WITH USERNAMES WITH SPACES IN THEM DUE TO 
 Sometimes the money doesnt save to the database, therefore, causing data loss
 Money loss
 
-There’s a bug with coin flip to get you out of debt
 
 !DAY IS RETURNING THE WRONG DAY
