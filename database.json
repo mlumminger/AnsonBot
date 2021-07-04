@@ -2,11 +2,11 @@
 	"users": [
 		{
 			"id": "351574671109521410",
-			"wallet": 11675,
+			"wallet": 22011,
 			"bank": 383,
 			"name": "Vinh",
 			"cooldowns": {
-				"weekly": 37913372216264
+				"weekly": 37913373712315
 			},
 			"inventory": [
 				{
@@ -49,10 +49,12 @@
 		},
 		{
 			"id": "694609292019368009",
-			"wallet": 1079,
+			"wallet": 2452,
 			"bank": 80575,
 			"name": "Nick",
-			"cooldowns": {},
+			"cooldowns": {
+				"weekly": 37913374409122
+			},
 			"inventory": []
 		},
 		{

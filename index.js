@@ -471,7 +471,7 @@ function SetCooldown(userID, name, duration) {
 function GetDateDifference(date1, date2) {
   var msDiff = Math.abs(date1 - date2);
   var diff = {
-    days : Math.floor(msDiff / 86400000) % 24,
+    days : Math.floor(msDiff / 86400000) % 7,
     hours: Math.floor(msDiff / 3600000) % 24,
     mins: Math.floor(msDiff / 60000) % 60,
     seconds: Math.floor(msDiff / 1000) % 60

@@ -30,7 +30,7 @@ function economyCommands() {
 
       user.wallet += weekly;
       msg.channel.send("yay! bestie you got `" + weekly + "`. your balance is now `" + user.wallet + "`");
-      SetCooldown(msg.author.id, "weekly", 604800000);
+      SetCooldown(msg.author.id, "weekly", 60480000);
       SaveDataToJSON();
       return;
     }
