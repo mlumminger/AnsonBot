@@ -26,7 +26,7 @@
 		},
 		{
 			"id": "484859857409671191",
-			"wallet": 124,
+			"wallet": 23,
 			"bank": 0,
 			"name": "Torno",
 			"cooldowns": {}
@@ -65,7 +65,7 @@
 		{
 			"id": "221685858166636544",
 			"wallet": 377,
-			"bank": 999000,
+			"bank": 2114,
 			"name": "Karen",
 			"cooldowns": {}
 		},
@@ -78,7 +78,65 @@
 				"rob": 1625026497028,
 				"beg": 1625044786107
 			}
+
 		}
 	],
-	"totalMoney": 0
+	"shop": [
+		{
+			"name": "Holy Bible",
+			"price": 60,
+			"stock": 565,
+			"description": "You need Jesus in your life"
+		},
+		{
+			"name": "A kiss from Anson",
+			"price": 1000,
+			"stock": 1000,
+			"description": "A kiss from bestie westie!"
+		},
+		{
+			"name": "Anson in a dress",
+			"price": 250000,
+			"stock": 4,
+			"description": "Anson in a dress will be DM'd"
+		},
+		{
+			"name": "Gamer-Chan",
+			"price": 300000,
+			"stock": 2,
+			"description": "One of a kind (Limited to 2)"
+		},
+		{
+			"name": "Anson's User",
+			"price": 1000000,
+			"stock": 1,
+			"description": "Anson's League username"
+		},
+		{
+			"name": "Certificate of Wealth",
+			"price": 1000000000,
+			"stock": 1,
+			"description": "You're too rich"
+		},
+		{
+			"name": "Anson's Password",
+			"price": 100000000000000,
+			"stock": 0,
+			"description": "Anson's League password"
+		}
+	],
+	"stocks": {
+		"bod": {
+			"name": "Bishop O'Dowd Highschool",
+			"shorthand": "bod",
+			"value": 100,
+			"delta": 10
+		},
+		"ans": {
+			"name": "Anson Corp.",
+			"shorthand": "ans",
+			"value": 100,
+			"delta": -10
+		}
+	}
 }
