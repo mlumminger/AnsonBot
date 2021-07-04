@@ -1,4 +1,5 @@
 const express = require('express');
+require('dotenv').config({path : "C:\\Users\\vinhp\\OneDrive\\Desktop\\Coding Projects\\AnsonBot\\private\\token.env"});
 const app = express();
 const port = 3000;
 app.get('/', (req, res) => res.send('Bot Online!'));
@@ -6,7 +7,7 @@ app.listen(port, () => print('App listening at http://localhost:${port}'));
 const Discord = require("discord.js");
 const client = new Discord.Client();
 
-client.login(process.env(Discord_Token))
+client.login(process.env.DISCORD_TOKEN)
 
 var fs = require('fs');
 var database;
