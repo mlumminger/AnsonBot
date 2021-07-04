@@ -1,2 +1,4 @@
-# Files
+/private
+/node_modules
+/public/storage
 .env
