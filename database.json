@@ -2,11 +2,11 @@
 	"users": [
 		{
 			"id": "351574671109521410",
-			"wallet": 0,
+			"wallet": 11675,
 			"bank": 383,
 			"name": "Vinh",
 			"cooldowns": {
-				"beg": 1625296494690
+				"weekly": 37913372216264
 			},
 			"inventory": [
 				{
@@ -14,20 +14,8 @@
 					"count": 10000
 				},
 				{
-					"name": "Gamer-Chan",
-					"count": 1
-				},
-				{
 					"name": "Holy Bible",
 					"count": 101
-				},
-				{
-					"name": "Anson's Password",
-					"count": 1
-				},
-				{
-					"name": "Anson in a dress",
-					"count": 1
 				}
 			]
 		},
@@ -61,7 +49,7 @@
 		},
 		{
 			"id": "694609292019368009",
-			"wallet": 0,
+			"wallet": 1079,
 			"bank": 80575,
 			"name": "Nick",
 			"cooldowns": {},
@@ -94,36 +82,21 @@
 			"bank": -233,
 			"name": "Max",
 			"cooldowns": {},
-			"inventory": [
-				{
-					"name": "Gamer-Chan",
-					"count": null
-				},
-				{
-					"name": "A kiss from Anson",
-					"count": null
-				}
-			]
+			"inventory": []
 		}
 	],
 	"shop": [
 		{
-			"name": "Gamer-Chan",
-			"price": 300000,
-			"stock": null,
-			"description": "One of a kind"
+			"name": "Holy Bible",
+			"price": 60,
+			"stock": 565,
+			"description": "You need Jesus in your life"
 		},
 		{
 			"name": "A kiss from Anson",
 			"price": 1000,
-			"stock": null,
+			"stock": 1000,
 			"description": "A kiss from bestie westie!"
-		},
-		{
-			"name": "Certificate of Wealth",
-			"price": 1000000000,
-			"stock": 1,
-			"description": "You're too rich"
 		},
 		{
 			"name": "Anson in a dress",
@@ -132,10 +105,10 @@
 			"description": "Anson in a dress will be DM'd"
 		},
 		{
-			"name": "Anson's Password",
-			"price": 100000000000000,
-			"stock": 0,
-			"description": "Anson's League password"
+			"name": "Gamer-Chan",
+			"price": 300000,
+			"stock": 2,
+			"description": "One of a kind (Limited to 2)"
 		},
 		{
 			"name": "Anson's User",
@@ -144,10 +117,16 @@
 			"description": "Anson's League username"
 		},
 		{
-			"name": "Holy Bible",
-			"price": 60,
-			"stock": 565,
-			"description": "You need Jesus in your life"
+			"name": "Certificate of Wealth",
+			"price": 1000000000,
+			"stock": 1,
+			"description": "You're too rich"
+		},
+		{
+			"name": "Anson's Password",
+			"price": 100000000000000,
+			"stock": 0,
+			"description": "Anson's League password"
 		}
 	]
 }

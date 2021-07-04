@@ -6,8 +6,8 @@ app.listen(port, () => print('App listening at http://localhost:${port}'));
 const Discord = require("discord.js");
 const client = new Discord.Client();
 
-client.login(process.env['DiscordToken']);
-
+// client.login(process.env(Discord_Token))
+client.login("ODU5Njg0MTk5MTI0MTcyODEx.YNwRTQ.JFEwqc69EQTCkBHeicib353YJww")
 var fs = require('fs');
 var database;
 var log = "";
@@ -265,23 +265,30 @@ client.on('message', m => {      ///MESSAGE HANDLER
 
       embed.setTitle("Help Menu");
       embed.addFields(
+        //GENERAL  
         { name: "!name", value: "Changes your nickname / Bad", inline: true },
-        { name: "!beg", value: "Begs Anson for money", inline: true },
-        { name: "!deposit", value: "Deposits your wallet balance to the bank (!deposit ###)", inline: true },
-        { name: "!withdraw", value: "Wtihdraw money from your bank to your wallet (!withdraw ###)", inline: true },
-        { name: "!rob", value: "Robs the person you ping (!rob @example)", inline: true },
         { name: "!esports", value: "Information on E-Sports", inline: true },
         { name: "!8ball", value: "It'll answer your question! (!8ball question)", inline: true },
-        { name: "!slots", value: "Gamble your wallet money! x10 the return", inline: true },
-        { name: "!give or !send", value: "Send Money to your Friends! !send @example ##)", inline: true },
         { name: "!day", value: "GAME WEEK DAY!", inline: true },
-        { name: "!bal", value: "Gives Information on your Wallet and Bank balance", inline: true },
-        { name: "!leaderboard or !lb", value: "Gives Information on the Top Sugar Daddies", inline: true },
+        { name: "!femboyanson", value: "Anson Pics owo", inline: true },
+        //GAMBLE
+        { name: "!slots", value: "Gamble your wallet money! x10 the return", inline: true },
         { name: "!coinflip", value: "50/50 Chance of winning money", inline: true },
+        //ECONOMY & SHOP
+        { name: "!leaderboard or !lb", value: "Gives Information on the Top Sugar Daddies", inline: true },
+        { name: "!rob", value: "Robs the person you ping (!rob @example)", inline: true },
         { name: "!shop", value: "Display the items that are available for sale", inline: true },
         { name: "!inventory or !inv", value: "See all the items you have in your inventory", inline: true },
-        { name: "!femboyanson", value: "Anson Pics owo", inline: true },
-        { name: "!coinflip", value: "50/50 Chance of winning money", inline: true }
+        { name: "!deposit", value: "Deposits your wallet balance to the bank (!deposit ###)", inline: true },
+        { name: "!withdraw", value: "Wtihdraw money from your bank to your wallet (!withdraw ###)", inline: true },
+        { name: "!bal", value: "Gives Information on your Wallet and Bank balance", inline: true },
+        { name: "!beg", value: "Begs Anson for money", inline: true },
+        { name: "!give or !send", value: "Send Money to your Friends! !send @example ##)", inline: true },
+        { name: "!buy", value: "!buy (index # of item in shop) + amount", inline: true },
+        { name: "!sell", value: "!sell (index # of item in inv) + amount", inline: true },
+        { name: "!daily", value: "Get your daily money!", inline: true },
+        { name: "!weekly", value: "Get your weekly money!", inline: true }
+        
       );
       embed.setColor(0x38c96e);
       msg.channel.send(embed);
@@ -375,19 +382,14 @@ client.on('message', m => {      ///MESSAGE HANDLER
       return;
     }
 
-    //-------------- ECONOMY STUFF-----------------////
     economyCommands()
     shopCommands();
-
-    // --------------- Gambling --------------------- //
     gambleCommands()
   }
   catch (err) {
     OnError(err, msg);
   }
 });
-
-
 
 // --------------- Functions --------------------- //
 
@@ -469,6 +471,7 @@ function SetCooldown(userID, name, duration) {
 function GetDateDifference(date1, date2) {
   var msDiff = Math.abs(date1 - date2);
   var diff = {
+    days : Math.floor(msDiff / 86400000) % 24,
     hours: Math.floor(msDiff / 3600000) % 24,
     mins: Math.floor(msDiff / 60000) % 60,
     seconds: Math.floor(msDiff / 1000) % 60

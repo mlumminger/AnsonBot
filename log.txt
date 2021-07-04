@@ -615,3 +615,102 @@ The more people do slots the higher the chance the next time someone gambles
 [08:29:53]: Error: TypeError: Cannot read property 'price' of undefined
 [08:35:21]: #general | Vinnie: !sell 3
 [08:38:21]: #general | Vinnie: !sell 3
+[19:38:57]: #general | Vinnie: !beg
+[19:40:02]: #general | Vinnie: <@!473191715411329035> hey when you wake up or something transfer the files from experimental to main
+[19:40:11]: #general | Vinnie: ikd how to do that
+[19:55:51]: #general | Vinnie: !beg
+[19:55:52]: #general | Vinnie: !beg
+[20:00:04]: #general | Vinnie: !bal
+[20:01:20]: #general | Vinnie: !bal
+[20:01:36]: #general | Vinnie: !bal
+[20:06:11]: #general | Vinnie: !inv
+[20:06:15]: #general | Vinnie: !sell 0
+[20:06:15]: Error: TypeError: Cannot read property 'name' of undefined
+[20:07:05]: #general | Vinnie: !beg
+[20:08:10]: #general | Vinnie: !day\
+[20:08:12]: #general | Vinnie: !day
+[20:08:22]: #general | Vinnie: ._.
+[20:09:50]: #general | Vinnie: guys
+[20:09:57]: #general | Vinnie: how much should !daily be
+[20:10:04]: #general | Vinnie: a flat 500 coins?
+[20:10:12]: #general | Vinnie: 200 coins?
+[20:10:17]: #general | Vinnie: a range between 200-500
+[20:10:31]: #general | Vinnie: more rng
+[20:18:28]: #general | Geeraffe: 300-500
+[20:18:31]: #general | Geeraffe: be kind
+[20:20:46]: #general | Vinnie: o k
+[20:26:30]: #general | Vinnie: !daily
+[20:26:42]: #general | Vinnie: !beg
+[20:28:16]: #general | Vinnie: !daily
+[20:31:11]: #general | Vinnie: !daily
+[20:31:57]: #general | Vinnie: !daily
+[20:32:04]: #general | Vinnie: !resetcd
+[20:32:08]: #general | Vinnie: !daily
+[20:32:10]: #general | Vinnie: !daily
+[20:34:11]: #general | Vinnie: !daily
+[20:35:21]: #general | Vinnie: !daily
+[20:35:26]: #general | Vinnie: !resetcd
+[20:35:27]: #general | Vinnie: !daily
+[20:35:27]: #general | Vinnie: !daily
+[20:37:00]: #general | Vinnie: !resetcd
+[20:37:04]: #general | Vinnie: !daily
+[20:37:04]: #general | Vinnie: !daily
+[20:39:31]: #general | Vinnie: !resetcd
+[20:39:33]: #general | Vinnie: !daily
+[20:39:33]: #general | Vinnie: !daily
+[20:44:34]: #general | Vinnie: HEY GUYS! HOW MUCH SHOULD WEEKLY GIVE YOU?
+[20:44:37]: #general | Vinnie: A FLAT AMOUNT
+[20:44:39]: #general | Vinnie: OR A RANGE
+[20:45:50]: #general | Geeraffe: a lot
+[20:45:52]: #general | Geeraffe: flat
+[20:45:59]: #general | Geeraffe: rather not get scammed on a weekly
+[20:46:08]: #general | Geeraffe: though maybe like small rnage
+[20:50:52]: #general | Vinnie: okay so (1000, 1500)?
+[20:58:07]: #general | Vinnie: !weekly
+[20:58:12]: #general | Vinnie: !beg
+[20:58:15]: #general | Vinnie: !weekly
+[20:58:17]: #general | Vinnie: !daily
+[20:59:35]: #general | Vinnie: !weekly
+[20:59:35]: #general | Vinnie: !weekly
+[20:59:46]: #general | Vinnie: !help
+[20:59:52]: #general | Vinnie: !weekly
+[21:01:38]: #general | Vinnie: !weekly
+[21:01:43]: #general | Vinnie: !weekly
+[21:01:48]: #general | Vinnie: !weekly
+[21:01:48]: #general | Vinnie: !weekly
+[21:01:51]: #general | Vinnie: !daily
+[21:03:26]: #general | Geeraffe: !weekly
+[21:03:30]: #general | Geeraffe: yea seems good
+[21:06:23]: #general | Vinnie: !weekly
+[21:06:23]: #general | Vinnie: !weekly
+[21:06:28]: #general | Vinnie: !resetcd
+[21:06:29]: #general | Vinnie: !weekly
+[21:06:30]: #general | Vinnie: !weekly
+[21:06:38]: #general | Vinnie: !weekly
+[21:06:49]: #general | Vinnie: !daily
+[21:06:50]: #general | Vinnie: !daily
+[21:06:52]: #general | Vinnie: !daily
+[21:08:06]: #general | Vinnie: !resetcd
+[21:08:09]: #general | Vinnie: !daily
+[21:08:10]: #general | Vinnie: !daily
+[21:08:49]: #general | Vinnie: !resetcd
+[21:08:53]: #general | Vinnie: !daily
+[21:08:53]: #general | Vinnie: !daily
+[21:08:59]: #general | Vinnie: !weekly
+[21:09:00]: #general | Vinnie: !weekly
+[21:09:02]: #general | Vinnie: !weekly
+[21:09:57]: #general | Vinnie: !resetcd
+[21:10:01]: #general | Vinnie: !daily
+[21:10:01]: #general | Vinnie: !daily
+[21:10:06]: #general | Vinnie: !weekly
+[21:10:06]: #general | Vinnie: !weekly
+[21:11:13]: #general | Vinnie: !weekly
+[21:11:14]: #general | Vinnie: !weekly
+[21:11:21]: #general | Vinnie: !resetcd
+[21:11:22]: #general | Vinnie: !weekly
+[21:11:23]: #general | Vinnie: !weekly
+[21:11:26]: #general | Vinnie: !weekly
+[21:11:31]: #general | Vinnie: !weekly
+[21:16:52]: #general | Vinnie: !resetcd
+[21:16:56]: #general | Vinnie: !weekly
+[21:16:56]: #general | Vinnie: !weekly

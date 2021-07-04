@@ -1,5 +1,41 @@
 function economyCommands() {
-      if (message == "!beg") {
+    if (message.substring(0, 6) == "!daily") {
+      var index = GetIndexFromUserID(msg.author.id, true, msg);
+      var user = database.users[index];
+      var daily = GetRandomInt(300, 500);
+      
+      if (user.cooldowns["daily"] > Date.now()) {
+        var diff = GetDateDifference(user.cooldowns["daily"], Date.now());
+        msg.channel.send("Sowwy, but you cant do daily yet! Try asking again in " + diff.hours + " hours, " + diff.mins + " minutes, " + diff.seconds + " seconds!");
+        return;
+      }
+
+      user.wallet += daily;
+      msg.channel.send("yay! bestie you got `" + daily + "`. your balance is now `" + user.wallet + "`");
+      SetCooldown(msg.author.id, "daily", 86400000);
+      SaveDataToJSON();
+      return;
+    }
+
+    if (message == "!weekly") {
+      var index = GetIndexFromUserID(msg.author.id, true, msg);
+      var user = database.users[index];
+      var weekly = GetRandomInt(1000, 1500);
+
+      if (user.cooldowns["weekly"] > Date.now()) {
+        var diff = GetDateDifference(user.cooldowns["weekly"], Date.now());
+        msg.channel.send("Sowwy, but you cant do weekly yet! Try asking again in " + diff.days + " days, " + diff.hours + " hours, " + diff.mins + " minutes, " + diff.seconds + " seconds!");
+        return;
+      }
+
+      user.wallet += weekly;
+      msg.channel.send("yay! bestie you got `" + weekly + "`. your balance is now `" + user.wallet + "`");
+      SetCooldown(msg.author.id, "weekly", 604800000);
+      SaveDataToJSON();
+      return;
+    }
+
+    if (message == "!beg") {
       var index = GetIndexFromUserID(msg.author.id, true, msg);
       var user = database.users[index];
       var num = GetRandomInt(0, 300);
@@ -216,11 +252,11 @@ function economyCommands() {
         return;
       }
       if (amount > sender.wallet) {
-        msg.channel.send("You dont have enough money to give them that much");
+        msg.channel.send("you dont have enough money to give them " + amount + " coins");
         return;
       }
       if (amount < 0) {
-        msg.channel.send("uwu you have send negative money!!");
+        msg.channel.send("uwu you cant send negative money!!");
         return;
       }
       else {

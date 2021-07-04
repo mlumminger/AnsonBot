@@ -166,4 +166,7 @@ function shopCommands() {
     SaveDataToJSON();
     return;
   }
+
+  // ADD !GIFT FUNCTION
+
 }
