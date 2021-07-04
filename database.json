@@ -2,11 +2,12 @@
 	"users": [
 		{
 			"id": "351574671109521410",
-			"wallet": 22011,
+			"wallet": 21876,
 			"bank": 383,
 			"name": "Vinh",
 			"cooldowns": {
-				"weekly": 37913373712315
+				"weekly": 37913373712315,
+				"beg": 1625379679266
 			},
 			"inventory": [
 				{
