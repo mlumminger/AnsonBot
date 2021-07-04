@@ -6,3 +6,5 @@ Money loss
 !sell function gives error when index is 0 (!sell 0) => Error
 
 !DAY IS RETURNING THE WRONG DAY
+
+playAudio() doesnt have the bot leave after playing audio, which may or may not be better

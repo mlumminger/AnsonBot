@@ -1,5 +1,5 @@
 function economyCommands() {
-    if (message.substring(0, 6) == "!daily") {
+    if (message.substring(0, 6) == `${pre}daily`) {
       var index = GetIndexFromUserID(msg.author.id, true, msg);
       var user = database.users[index];
       var daily = GetRandomInt(300, 500);
@@ -17,7 +17,7 @@ function economyCommands() {
       return;
     }
 
-    if (message == "!weekly") {
+    if (message == `${pre}weekly`) {
       var index = GetIndexFromUserID(msg.author.id, true, msg);
       var user = database.users[index];
       var weekly = GetRandomInt(1000, 1500);
@@ -35,7 +35,7 @@ function economyCommands() {
       return;
     }
 
-    if (message == "!beg") {
+    if (message == `${pre}beg`) {
       var index = GetIndexFromUserID(msg.author.id, true, msg);
       var user = database.users[index];
       var num = GetRandomInt(0, 300);
@@ -88,7 +88,7 @@ function economyCommands() {
       return;
     }
 
-    if (message.substring(0, 4) == "!bal") {
+    if (message.substring(0, 4) == `${pre}bal`) {
       ReadJSONData();
 
       var user;
@@ -118,7 +118,7 @@ function economyCommands() {
       return;
     }
 
-    if (message.substring(0, 10) == "!withdraw ") {
+    if (message.substring(0, 10) == `${pre}withdraw`) {
       var amount = message.slice(10);
       var index = GetIndexFromUserID(msg.author.id, true, msg);
       var user = database.users[index];
@@ -175,7 +175,7 @@ function economyCommands() {
     }
 
 
-    if (message.substring(0, 9) == "!deposit ") {
+    if (message.substring(0, 9) == `${pre}deposit `) {
       var amount = message.slice(9);
       var index = GetIndexFromUserID(msg.author.id, true, msg);
       var user = database.users[index];
@@ -234,7 +234,7 @@ function economyCommands() {
     }
 
 
-    if (message.includes("!give ") || message.includes("!send ")) {
+    if ([`${pre}give`, `${pre}send`].includes(dividedMessage[0])) {
       var targetIndex = GetIndexFromPingOrName(dividedMessage[1]);
       var amount = Math.floor(Number(dividedMessage[2]));
 
@@ -268,7 +268,7 @@ function economyCommands() {
       return;
     }
 
-    if (message.substring(0, 5) == "!rob ") {
+    if (dividedMessage[0] == `${pre}rob`) {
       var thief = database.users[GetIndexFromUserID(msg.author.id, true, msg)];
 
       if (thief.cooldowns["rob"] > Date.now()) {
@@ -324,7 +324,8 @@ function economyCommands() {
       SaveDataToJSON();
       return;
     }
-        if (["!leaderboard", "!lb"].includes(DivideByWhitespace(message)[0])) {
+
+    if([`${pre}leaderboard`, `${pre}lb`].includes(DivideByWhitespace(message)[0])) {
       var users = database.users;
       var leader_board = []
       var size = users.length

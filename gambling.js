@@ -1,5 +1,5 @@
 function gambleCommands() {
-  if (["!cf", "!coinflip"].includes(DivideByWhitespace(message)[0])) {
+  if ([`${pre}cf`, `${pre}coinflip`].includes(DivideByWhitespace(message)[0])) {
     var user = database.users[GetIndexFromUserID(msg.author.id, true, msg)];
     var heads = GetRandomInt(0, 1);
 
@@ -77,64 +77,64 @@ function gambleCommands() {
     return;
   }
 
-    if (message.substring(0, 7) == "!slots ") {
-      var payoutFactor = 7; //FACTOR OF HOW MUCH MONEY YOU GET BACK FOR A WIN
+  if (dividedMessage[0] == `${pre}slots`) {
+    var payoutFactor = 7; //FACTOR OF HOW MUCH MONEY YOU GET BACK FOR A WIN
 
-      var amount = message.slice(7);
-      var index = GetIndexFromUserID(msg.author.id, true, msg);
-      var user = database.users[index];
-      var embed = new Discord.MessageEmbed();
+    var amount = message.slice(7);
+    var index = GetIndexFromUserID(msg.author.id, true, msg);
+    var user = database.users[index];
+    var embed = new Discord.MessageEmbed();
 
-      if (user.cooldowns["slots"] > Date.now()) {
-        var diff = GetDateDifference(user.cooldowns["slots"], Date.now());
-        msg.channel.send("Sowwy, but you cant gamble yet! Try gambling again in " + diff.seconds + " seconds!");
-        return;
-      }
-
-      if (amount == "all") {
-        amount = user.wallet;
-        if (amount <= 0) {
-          msg.channel.send("oh no! too bad bestie! looks like u have no monies :confounded:!");
-          return;
-        }
-      }
-      else if (!isNaN(amount)) {
-        amount = Math.floor(amount);
-        if (amount > user.wallet) {
-          msg.channel.send("UWU you don't have any money");
-          return;
-        }
-        if (amount <= 0) {
-          msg.channel.send("bestie! you cant gamble nothing!");
-          return;
-        }
-      }
-      else {
-        msg.channel.send("UWU you didn't enter a valid amount");
-        return;
-      }
-      var final = [];
-      var emoji = [":japanese_goblin:", ":poop:", ":heart:"];
-      for (let i = 0; i < 3; i++) {
-        a = emoji[GetRandomInt(0, emoji.length - 1)];
-        final.push(a);
-      }
-
-      embed.setTitle("Slot Machine");
-      embed.addField("Results", String(final), true);
-
-      if (final[0] == final[1] && final[1] == final[2] && final[0] == final[2]) {
-        user.wallet += payoutFactor * amount;
-        embed.addField("You won!", "Your balance is now: " + user.wallet, false)
-      }
-      else {
-        user.wallet -= amount;
-        embed.addField("You lost!", "Your balance is now: " + user.wallet, false)
-      }
-
-      msg.channel.send(embed);
-      SetCooldown(msg.author.id, "slots", 0.15);
-      SaveDataToJSON();
+    if (user.cooldowns["slots"] > Date.now()) {
+      var diff = GetDateDifference(user.cooldowns["slots"], Date.now());
+      msg.channel.send("Sowwy, but you cant gamble yet! Try gambling again in " + diff.seconds + " seconds!");
       return;
     }
+
+    if (amount == "all") {
+      amount = user.wallet;
+      if (amount <= 0) {
+        msg.channel.send("oh no! too bad bestie! looks like u have no monies :confounded:!");
+        return;
+      }
+    }
+    else if (!isNaN(amount)) {
+      amount = Math.floor(amount);
+      if (amount > user.wallet) {
+        msg.channel.send("UWU you don't have any money");
+        return;
+      }
+      if (amount <= 0) {
+        msg.channel.send("bestie! you cant gamble nothing!");
+        return;
+      }
+    }
+    else {
+      msg.channel.send("UWU you didn't enter a valid amount");
+      return;
+    }
+    var final = [];
+    var emoji = [":japanese_goblin:", ":poop:", ":heart:"];
+    for (let i = 0; i < 3; i++) {
+      a = emoji[GetRandomInt(0, emoji.length - 1)];
+      final.push(a);
+    }
+
+    embed.setTitle("Slot Machine");
+    embed.addField("Results", String(final), true);
+
+    if (final[0] == final[1] && final[1] == final[2] && final[0] == final[2]) {
+      user.wallet += payoutFactor * amount;
+      embed.addField("You won!", "Your balance is now: " + user.wallet, false)
+    }
+    else {
+      user.wallet -= amount;
+      embed.addField("You lost!", "Your balance is now: " + user.wallet, false)
+    }
+
+    msg.channel.send(embed);
+    SetCooldown(msg.author.id, "slots", 0.15);
+    SaveDataToJSON();
+    return;
   }
+}

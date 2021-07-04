@@ -1,8 +1,6 @@
   - given people might not be active
   - incentive to start gambling(get them hooked)
 
-COINFLIP SHOULD BE PREDICTION
-
 Add counter in slots to increase chance
 The more people do slots the higher the chance the next time someone gambles
 

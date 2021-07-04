@@ -1,5 +1,5 @@
 function shopCommands() {
-  if (dividedMessage[0] == "!sell") {
+  if (dividedMessage[0] == `${pre}sell`) {
     var user = database.users[GetIndexFromUserID(msg.author.id)];
     var itemIndex = Math.floor(Number(dividedMessage[1])) - 1;
     var amount = Math.floor(Number(dividedMessage[2]));
@@ -55,7 +55,7 @@ function shopCommands() {
     return;
   }
   
-  if (dividedMessage[0] == "!buy") {
+  if (dividedMessage[0] == `${pre}buy`) {
     var itemIndex = Math.floor(Number(dividedMessage[1])) - 1;
     var item = database.shop[itemIndex];
     
@@ -119,7 +119,7 @@ function shopCommands() {
     return;
   }
 
-  if (dividedMessage[0] == "!shop") {
+  if (dividedMessage[0] == `${pre}shop`) {
     var shop = database.shop;
     var embed = new Discord.MessageEmbed();
     embed.setTitle("Shop");
@@ -142,7 +142,7 @@ function shopCommands() {
     return;
   }
   
-  if (["!bag", "!inv", "!inventory"].includes(message)) {
+  if ([`${pre}bag`, `${pre}inv`, `${pre}inventory`].includes(message)) {
     var user = database.users[GetIndexFromUserID(msg.author.id)];
     if(!user.inventory) {
       user.inventory = [];
