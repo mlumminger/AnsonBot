@@ -1,8 +1,0 @@
-SOME COMMANDS, SUCH AS !BAL DONT WORK WITH USERNAMES WITH SPACES IN THEM DUE TO USING 'split(" ")'
-
-Sometimes the money doesnt save to the database, therefore, causing data loss
-Money loss
-
-!sell function gives error when index is 0 (!sell 0) => Error
-
-!DAY IS RETURNING THE WRONG DAY
