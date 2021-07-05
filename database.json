@@ -109,7 +109,7 @@
 		{
 			"name": "Anson's User",
 			"price": 1000000,
-			"stock": 1,
+			"stock": 0,
 			"description": "Anson's League username"
 		},
 		{
@@ -127,16 +127,16 @@
 	],
 	"stocks": {
 		"bod": {
-			"name": "Bishop O'Dowd Highschool",
+			"name": "Bishop O'Dowd",
 			"shorthand": "bod",
-			"value": 100,
-			"delta": 10
+			"value": 11,
+			"delta": 12
 		},
 		"ans": {
 			"name": "Anson Corp.",
 			"shorthand": "ans",
-			"value": 100,
-			"delta": -10
+			"value": 166,
+			"delta": 11
 		}
 	}
 }
