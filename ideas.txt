@@ -44,3 +44,6 @@ OPTIONAL:
   - in the slots and coinflip embed show them the percentage of their return
 add a cap to the bank?
   - the cap increases the more you type or the type of job you have
+
+
+LAYER RANDOM NOISE FOR STOCK VALUE

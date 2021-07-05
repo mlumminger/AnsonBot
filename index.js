@@ -8,12 +8,13 @@ const Discord = require("discord.js");
 const client = new Discord.Client();
 
 
+
 ///IMPORTANT SETTINGS ////////////////
 const version = "experimental"; //master or experimental
 const logAllMessages = true;
 const messagesPerLog = 1;
 
-const pre = "~"
+const pre = "$"
 
 //////////////////////////////////////
 
@@ -53,7 +54,7 @@ var msg;
 var rawMessage;
 var message;
 var dividedMessage;
-
+var rawDividedMessage;
 
 client.on("ready", function() {
   print("Ready!");
@@ -67,6 +68,8 @@ client.on('message', m => {      ///MESSAGE HANDLER
   rawMessage = msg.content;
   message = rawMessage.toLowerCase();
   dividedMessage = DivideByWhitespace(message);
+  rawDividedMessage = DivideByWhitespace(rawMessage);
+
 
   if (msg.author == client.user.id) return;
 
@@ -158,7 +161,7 @@ client.on('message', m => {      ///MESSAGE HANDLER
     }
     
     //-------------- GENERAL STUFF-----------------////
-    
+
     AudioCommands();
     generalCmds();
     economyCommands();
@@ -296,7 +299,7 @@ function print(message, logToConsole = true, logToFile = false, type) {
 }
 
 function OnError(error, message) {
-  message.channel.send("Oh no! looks like you made a fucky wucky!");
+  message.channel.send("Oh no! looks like I made a fucky wucky!");
   print("An error occured due to the message: \"" + message.content + "\"");
   print(error, true, true, "error");
 }

@@ -2,12 +2,12 @@
 	"users": [
 		{
 			"id": "351574671109521410",
-			"wallet": 0,
-			"bank": 10835,
+			"wallet": 154644,
+			"bank": 0,
 			"name": "Vinh",
 			"cooldowns": {
 				"weekly": 37913373712315,
-				"beg": 1625426595283,
+				"beg": 1625476724926,
 				"daily": 6809426708259
 			},
 			"inventory": [
@@ -18,13 +18,24 @@
 				{
 					"name": "Holy Bible",
 					"count": 101
+				},
+				{
+					"name": "Anson's User",
+					"count": 1
 				}
-			]
+			],
+			"stocks": {
+				"bod": {
+					"name": "Bishop O'Dowd",
+					"amount": 0,
+					"shorthand": "bod"
+				}
+			}
 		},
 		{
 			"id": "385460963517661194",
-			"wallet": 79,
-			"bank": 110300,
+			"wallet": 0,
+			"bank": 116876,
 			"name": "Shane",
 			"cooldowns": {}
 		},
@@ -82,11 +93,23 @@
 		},
 		{
 			"id": "473191715411329035",
-			"wallet": null,
-			"bank": -233,
+			"wallet": 0,
+			"bank": 85760,
 			"name": "Max",
 			"cooldowns": {},
-			"inventory": []
+			"inventory": [],
+			"stocks": {
+				"bod": {
+					"name": "Bishop O'Dowd",
+					"amount": 0,
+					"shorthand": "bod"
+				},
+				"ans": {
+					"name": "Anson Corp.",
+					"amount": 0,
+					"shorthand": "ans"
+				}
+			}
 		}
 	],
 	"shop": [
@@ -117,7 +140,7 @@
 		{
 			"name": "Anson's User",
 			"price": 1000000,
-			"stock": 1,
+			"stock": 0,
 			"description": "Anson's League username"
 		},
 		{
@@ -135,16 +158,16 @@
 	],
 	"stocks": {
 		"bod": {
-			"name": "Bishop O'Dowd Highschool",
+			"name": "Bishop O'Dowd",
 			"shorthand": "bod",
-			"value": 100,
-			"delta": 10
+			"value": 11,
+			"delta": 12
 		},
 		"ans": {
 			"name": "Anson Corp.",
 			"shorthand": "ans",
-			"value": 100,
-			"delta": -10
+			"value": 166,
+			"delta": 11
 		}
 	}
 }

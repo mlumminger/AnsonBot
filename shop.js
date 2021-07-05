@@ -119,7 +119,7 @@ function shopCommands() {
     return;
   }
 
-  if (dividedMessage[0] == `${pre}shop`) {
+  if (dividedMessage[0] == `${pre}shop`) { //shop command
     var shop = database.shop;
     var embed = new Discord.MessageEmbed();
     embed.setTitle("Shop");
