@@ -84,7 +84,7 @@ function economyCommands() {
           user.wallet -= num;
         }
       }
-      SetCooldown(msg.author.id, "beg", 0.05);
+      SetCooldown(msg.author.id, "beg", 0.25);
     }
     SaveDataToJSON();
     return;

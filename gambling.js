@@ -6,11 +6,7 @@ function gambleCommands() {
     var embed = new Discord.MessageEmbed();
     embed.setTitle("Coinflip");
     embed.setColor(0xffffff * heads); //White if heads, black if tails
-    if (user.cooldowns["slots"] > Date.now()) {
-      var diff = GetDateDifference(user.cooldowns["slots"], Date.now());
-      msg.channel.send("Sowwy, but you cant gamble yet! Try gambling again in " + diff.seconds + " seconds!");
-      return;
-    }
+
     if (DivideByWhitespace(message)[1]) { //If a second argument is specified
       var amount = DivideByWhitespace(message)[1];
       
@@ -85,12 +81,6 @@ function gambleCommands() {
     var user = database.users[index];
     var embed = new Discord.MessageEmbed();
 
-    if (user.cooldowns["slots"] > Date.now()) {
-      var diff = GetDateDifference(user.cooldowns["slots"], Date.now());
-      msg.channel.send("Sowwy, but you cant gamble yet! Try gambling again in " + diff.seconds + " seconds!");
-      return;
-    }
-
     if (amount == "all") {
       amount = user.wallet;
       if (amount <= 0) {
@@ -133,7 +123,6 @@ function gambleCommands() {
     }
 
     msg.channel.send(embed);
-    SetCooldown(msg.author.id, "slots", 0.15);
     SaveDataToJSON();
     return;
   }

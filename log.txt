@@ -1,0 +1,333 @@
+[11:11:50]: #bot-stuff | Max Umminger: $bal
+[11:11:55]: #bot-stuff | Max Umminger: $beg
+[11:11:57]: #bot-stuff | Max Umminger: $weekly
+[11:12:02]: #bot-stuff | Max Umminger: $weekly
+[11:14:14]: #bot-stuff | Max Umminger: $weekly
+[11:14:24]: #bot-stuff | Max Umminger: $beg
+[11:14:33]: #bot-stuff | Max Umminger: $stocks
+[11:15:56]: #bot-stuff | Max Umminger: $stocks
+[11:16:59]: #bot-stuff | Max Umminger: $bal
+[11:17:01]: #bot-stuff | Max Umminger: $deposit all
+[11:17:03]: #bot-stuff | Max Umminger: $bal
+[11:17:06]: #bot-stuff | Max Umminger: $stocks
+[11:17:19]: #bot-stuff | Max Umminger: $stocks buy BOD 44
+[11:17:28]: #bot-stuff | Max Umminger: $stocks inv
+[23:43:58]: #bot-stuff | Vinh Pham: $bal
+[23:44:09]: #bot-stuff | Vinh Pham: $inv
+[23:49:10]: #bot-stuff | Vinh Pham: $bal shane
+[23:49:17]: #bot-stuff | Vinh Pham: $lb
+[00:13:46]: #bot-stuff | Shane Canet: !withdraw 500000
+[00:13:57]: #bot-stuff | Shane Canet: $withdraw 500000
+[00:14:02]: #genshin-impact | Karen Liu: <a:PaimonWoah:803475395177086996>
+[00:14:03]: #bot-stuff | Shane Canet: $lb
+[00:14:17]: #bot-stuff | Shane Canet: $beg
+[00:14:21]: #bot-stuff | Shane Canet: $inv
+[00:14:28]: #bot-stuff | Shane Canet: $cf all
+[00:15:06]: #bot-stuff | Shane Canet: $beg
+[00:15:13]: #bot-stuff | Shane Canet: $cf all
+[00:15:17]: #bot-stuff | Shane Canet: $rob nick
+[00:15:36]: #bot-stuff | Shane Canet: $beg
+[00:15:54]: #bot-stuff | Shane Canet: $beg
+[00:16:07]: #bot-stuff | Shane Canet: $beg
+[00:16:12]: #bot-stuff | Shane Canet: $cf all
+[00:16:35]: #bot-stuff | Shane Canet: $beg
+[00:16:46]: #bot-stuff | Shane Canet: $beg
+[00:17:00]: #bot-stuff | Shane Canet: $beg
+[00:17:05]: #bot-stuff | Shane Canet: $cf all
+[00:17:08]: #bot-stuff | Shane Canet: $cf all
+[00:17:15]: #bot-stuff | Shane Canet: $cf all
+[00:17:20]: #bot-stuff | Shane Canet: $cf all
+[00:17:29]: #bot-stuff | Shane Canet: $cf all
+[00:17:33]: #bot-stuff | Shane Canet: $bal
+[00:17:39]: #bot-stuff | Shane Canet: $beg
+[00:17:51]: #bot-stuff | Shane Canet: $beg
+[00:18:02]: #bot-stuff | Shane Canet: $beg
+[00:18:08]: #bot-stuff | Shane Canet: $cf all
+[00:18:16]: #bot-stuff | Shane Canet: $beg
+[00:18:20]: #bot-stuff | Shane Canet: $cf all
+[00:18:24]: #bot-stuff | Shane Canet: $beg
+[00:18:29]: #bot-stuff | Shane Canet: $cf all
+[00:18:36]: #bot-stuff | Shane Canet: $beg
+[00:18:50]: #bot-stuff | Shane Canet: $beg
+[00:18:59]: #bot-stuff | Shane Canet: $beg
+[00:19:03]: #bot-stuff | Shane Canet: $cf all
+[00:19:06]: #bot-stuff | Shane Canet: $beg
+[00:19:10]: #bot-stuff | Shane Canet: $beg
+[00:19:14]: #bot-stuff | Shane Canet: &beg
+[00:19:17]: #bot-stuff | Shane Canet: $beg
+[00:19:20]: #bot-stuff | Shane Canet: $beg
+[00:19:25]: #bot-stuff | Shane Canet: $cf all
+[00:19:29]: #bot-stuff | Shane Canet: $beg
+[00:19:33]: #bot-stuff | Shane Canet: $beg
+[00:19:36]: #bot-stuff | Shane Canet: $beg
+[00:19:38]: #bot-stuff | Shane Canet: $beg
+[00:19:40]: #bot-stuff | Shane Canet: $beg
+[00:19:45]: #bot-stuff | Shane Canet: $cf all
+[00:19:48]: #bot-stuff | Shane Canet: $beg
+[00:19:51]: #bot-stuff | Shane Canet: $beg
+[00:19:53]: #bot-stuff | Shane Canet: $beg
+[00:19:58]: #bot-stuff | Shane Canet: $cf all
+[00:20:00]: #bot-stuff | Shane Canet: $beg
+[00:20:03]: #bot-stuff | Shane Canet: $beg
+[00:20:06]: #bot-stuff | Shane Canet: $beg
+[00:20:22]: #bot-stuff | Shane Canet: $beg
+[00:20:25]: #bot-stuff | Shane Canet: $beg
+[00:20:39]: #bot-stuff | Shane Canet: $beg
+[00:20:42]: #bot-stuff | Shane Canet: $beg
+[00:20:44]: #bot-stuff | Shane Canet: $beg
+[00:20:48]: #bot-stuff | Shane Canet: $cf all
+[00:20:52]: #bot-stuff | Shane Canet: $beg
+[00:20:56]: #bot-stuff | Shane Canet: $beg
+[00:20:59]: #bot-stuff | Shane Canet: $bal
+[00:21:02]: #bot-stuff | Shane Canet: $beg
+[00:21:06]: #bot-stuff | Shane Canet: $beg
+[00:21:09]: #bot-stuff | Shane Canet: $beg
+[00:21:12]: #bot-stuff | Shane Canet: $beg
+[00:21:16]: #bot-stuff | Shane Canet: $cf all
+[00:21:19]: #bot-stuff | Shane Canet: $beg
+[00:21:20]: #bot-stuff | Max Umminger: $beg
+[00:21:26]: #bot-stuff | Shane Canet: $beg
+[00:21:30]: #bot-stuff | Shane Canet: $beg
+[00:21:34]: #bot-stuff | Shane Canet: $beg
+[00:21:40]: #bot-stuff | Shane Canet: $beg
+[00:21:43]: #bot-stuff | Shane Canet: $cf all
+[00:21:48]: #bot-stuff | Shane Canet: $beg
+[00:21:50]: #bot-stuff | Max Umminger: $bal
+[00:21:52]: #bot-stuff | Shane Canet: $beg
+[00:21:55]: #bot-stuff | Shane Canet: $beg
+[00:21:58]: #bot-stuff | Max Umminger: $beg
+[00:21:59]: #bot-stuff | Shane Canet: $beg
+[00:22:03]: #bot-stuff | Shane Canet: $beg
+[00:22:05]: #bot-stuff | Shane Canet: $beg
+[00:22:08]: #bot-stuff | Shane Canet: $beg
+[00:22:10]: #bot-stuff | Max Umminger: $beg
+[00:22:12]: #bot-stuff | Shane Canet: $beg
+[00:22:15]: #bot-stuff | Shane Canet: $beg
+[00:22:21]: #bot-stuff | Shane Canet: $cf all
+[00:22:25]: #bot-stuff | Shane Canet: $cf all
+[00:22:27]: #bot-stuff | Shane Canet: $beg
+[00:22:31]: #bot-stuff | Shane Canet: $beg
+[00:22:33]: #bot-stuff | Shane Canet: $beg
+[00:22:36]: #bot-stuff | Shane Canet: $beg
+[00:22:40]: #bot-stuff | Shane Canet: $beg
+[00:22:46]: #bot-stuff | Shane Canet: $beg
+[00:22:50]: #bot-stuff | Shane Canet: $beg
+[00:22:53]: #bot-stuff | Shane Canet: $beg
+[00:22:56]: #bot-stuff | Shane Canet: $beg
+[00:23:00]: #bot-stuff | Shane Canet: $beg
+[00:23:03]: #bot-stuff | Shane Canet: $cf all
+[00:23:08]: #bot-stuff | Shane Canet: $beg
+[00:23:11]: #bot-stuff | Shane Canet: $beg
+[00:23:14]: #bot-stuff | Shane Canet: $beg
+[00:23:20]: #bot-stuff | Shane Canet: $bal
+[00:23:22]: #bot-stuff | Max Umminger: Shane stop coinflipping you have a problem
+[00:23:25]: #bot-stuff | Max Umminger: $beg
+[00:23:28]: #bot-stuff | Shane Canet: $beg
+[00:23:31]: #bot-stuff | Shane Canet: $beg
+[00:23:32]: #bot-stuff | Max Umminger: $bal
+[00:23:34]: #bot-stuff | Shane Canet: $beg
+[00:23:37]: #bot-stuff | Shane Canet: $beg
+[00:23:38]: #bot-stuff | Max Umminger: $deposit all
+[00:23:41]: #bot-stuff | Shane Canet: $cf all
+[00:23:41]: #bot-stuff | Vinh Pham: DATABASE
+[00:23:42]: #bot-stuff | Vinh Pham: BROKEN
+[00:23:43]: #bot-stuff | Vinh Pham: MAX
+[00:23:45]: #bot-stuff | Shane Canet: $beg
+[00:23:47]: #bot-stuff | Max Umminger: What??
+[00:23:49]: #bot-stuff | Shane Canet: $beg
+[00:23:52]: #bot-stuff | Shane Canet: $beg
+[00:23:59]: #bot-stuff | Shane Canet: $beg
+[00:24:00]: #bot-stuff | Vinh Pham: literally it doesnt save
+[00:24:04]: #bot-stuff | Shane Canet: $cf all
+[00:24:07]: #bot-stuff | Vinh Pham: $beg
+[00:24:07]: #bot-stuff | Shane Canet: $beg
+[00:24:09]: #bot-stuff | Vinh Pham: $beg
+[00:24:12]: #bot-stuff | Shane Canet: $beg
+[00:24:13]: #bot-stuff | Vinh Pham: $lb
+[00:24:17]: #bot-stuff | Shane Canet: $beg
+[00:24:20]: #bot-stuff | Shane Canet: $beg
+[00:24:24]: #bot-stuff | Shane Canet: $cf all
+[00:24:28]: #bot-stuff | Shane Canet: $beg
+[00:24:32]: #bot-stuff | Shane Canet: $cf all
+[00:24:35]: #bot-stuff | Shane Canet: $cf all
+[00:24:40]: #bot-stuff | Shane Canet: $deposit all
+[00:24:44]: #bot-stuff | Shane Canet: $beg
+[00:24:48]: #bot-stuff | Shane Canet: $beg
+[00:24:52]: #bot-stuff | Shane Canet: $beg
+[00:24:54]: #bot-stuff | Shane Canet: $beg
+[00:24:58]: #bot-stuff | Shane Canet: $cf all
+[00:25:00]: #bot-stuff | Shane Canet: $beg
+[00:25:03]: #bot-stuff | Shane Canet: $beg
+[00:25:06]: #bot-stuff | Shane Canet: $beg
+[00:25:10]: #bot-stuff | Shane Canet: $beg
+[00:25:14]: #bot-stuff | Shane Canet: $beg
+[00:25:17]: #bot-stuff | Shane Canet: $beg
+[00:25:20]: #bot-stuff | Shane Canet: $beg
+[00:25:23]: #bot-stuff | Shane Canet: $beg
+[00:25:26]: #bot-stuff | Shane Canet: $beg
+[00:25:29]: #bot-stuff | Shane Canet: $beg
+[00:25:32]: #bot-stuff | Shane Canet: $beg
+[00:25:36]: #bot-stuff | Shane Canet: $cf all
+[00:25:39]: #bot-stuff | Shane Canet: $beg
+[00:25:42]: #bot-stuff | Shane Canet: $beg
+[00:25:45]: #bot-stuff | Shane Canet: $beg
+[00:25:48]: #bot-stuff | Shane Canet: $beg
+[00:25:52]: #bot-stuff | Shane Canet: $beg
+[00:25:57]: #bot-stuff | Shane Canet: $cf all
+[00:26:03]: #bot-stuff | Shane Canet: $deposit all
+[00:26:06]: #bot-stuff | Shane Canet: $lb
+[00:26:16]: #bot-stuff | Shane Canet: $beg
+[00:26:20]: #bot-stuff | Shane Canet: $beg
+[00:26:28]: #bot-stuff | Shane Canet: $beg
+[00:26:33]: #bot-stuff | Shane Canet: $beg
+[00:26:36]: #bot-stuff | Max Umminger: $beg
+[00:26:38]: #bot-stuff | Shane Canet: $beg
+[00:26:41]: #bot-stuff | Shane Canet: $beg
+[00:26:43]: #bot-stuff | Max Umminger: $stocks inv
+[00:26:47]: #bot-stuff | Shane Canet: $beg
+[00:26:50]: #bot-stuff | Max Umminger: $beg
+[00:26:51]: #bot-stuff | Shane Canet: $beg
+[00:26:54]: #bot-stuff | Shane Canet: $beg
+[00:26:55]: #bot-stuff | Max Umminger: $bal
+[00:26:57]: #bot-stuff | Shane Canet: $beg
+[00:27:01]: #bot-stuff | Shane Canet: $beg
+[00:27:05]: #bot-stuff | Shane Canet: $beg
+[00:27:08]: #bot-stuff | Shane Canet: $beg
+[00:27:11]: #bot-stuff | Shane Canet: $beg
+[00:27:14]: #bot-stuff | Shane Canet: $beg
+[00:27:18]: #bot-stuff | Shane Canet: $cf all
+[00:27:22]: #bot-stuff | Shane Canet: $beg
+[00:27:25]: #bot-stuff | Shane Canet: $beg
+[00:27:33]: #bot-stuff | Shane Canet: $cf all
+[00:27:40]: #bot-stuff | Shane Canet: $deposit all
+[00:27:47]: #bot-stuff | Shane Canet: $bal
+[00:27:49]: #bot-stuff | Max Umminger: $bal
+[00:28:00]: #bot-stuff | Shane Canet: $beg
+[00:28:03]: #bot-stuff | Shane Canet: $beg
+[00:28:07]: #bot-stuff | Shane Canet: $beg
+[00:28:10]: #bot-stuff | Shane Canet: $beg
+[00:28:13]: #bot-stuff | Shane Canet: $beg
+[00:28:16]: #bot-stuff | Shane Canet: $beg
+[00:28:19]: #bot-stuff | Max Umminger: $stocks
+[00:28:20]: #bot-stuff | Shane Canet: $beg
+[00:28:24]: #bot-stuff | Shane Canet: $beg
+[00:28:29]: #bot-stuff | Shane Canet: $beg
+[00:28:33]: #bot-stuff | Shane Canet: $cf all
+[00:28:36]: #bot-stuff | Shane Canet: $beg
+[00:28:39]: #bot-stuff | Shane Canet: $beg
+[00:28:45]: #bot-stuff | Shane Canet: $beg
+[00:28:48]: #bot-stuff | Shane Canet: $beg
+[00:28:51]: #bot-stuff | Shane Canet: $beg
+[00:28:55]: #bot-stuff | Shane Canet: $beg
+[00:28:59]: #bot-stuff | Shane Canet: $beg
+[00:29:00]: #bot-stuff | Max Umminger: Wait shane
+[00:29:02]: #bot-stuff | Max Umminger: Wtf
+[00:29:04]: #bot-stuff | Shane Canet: Yes
+[00:29:13]: #bot-stuff | Shane Canet: $lb
+[00:29:17]: #bot-stuff | Shane Canet: $beg
+[00:29:18]: #bot-stuff | Max Umminger: Cool down broken?
+[00:29:22]: #bot-stuff | Shane Canet: No
+[00:29:25]: #bot-stuff | Shane Canet: It’s there
+[00:29:30]: #bot-stuff | Shane Canet: It’s just really short
+[00:29:31]: #bot-stuff | Shane Canet: Look
+[00:29:33]: #bot-stuff | Max Umminger: Why
+[00:29:33]: #bot-stuff | Shane Canet: $beg
+[00:29:36]: #bot-stuff | Shane Canet: $beg
+[00:29:40]: #bot-stuff | Max Umminger: $beg
+[00:29:44]: #bot-stuff | Max Umminger: $beg
+[00:29:46]: #bot-stuff | Max Umminger: $beg
+[00:29:50]: #bot-stuff | Shane Canet: See
+[00:29:50]: #bot-stuff | Max Umminger: Whys it so short
+[00:29:56]: #bot-stuff | Max Umminger: INFLATION
+[00:29:59]: #bot-stuff | Shane Canet: Because cf has a cool down now
+[00:30:07]: #bot-stuff | Max Umminger: THE ECONOMY IS RUINED
+[00:30:15]: #bot-stuff | Shane Canet: Not my fault y’all are the developers
+[00:30:25]: #bot-stuff | Shane Canet: Nick did the same just going with the meta
+[00:30:29]: #bot-stuff | Shane Canet: $beg
+[00:30:31]: #bot-stuff | Shane Canet: $beg
+[00:30:34]: #bot-stuff | Shane Canet: $beg
+[00:30:37]: #bot-stuff | Shane Canet: $beg
+[00:30:41]: #bot-stuff | Shane Canet: $beg
+[00:30:44]: #bot-stuff | Shane Canet: $beg
+[00:30:47]: #bot-stuff | Shane Canet: $beg
+[00:30:50]: #bot-stuff | Shane Canet: $beg
+[00:30:55]: #bot-stuff | Shane Canet: $beg
+[00:30:58]: #bot-stuff | Shane Canet: $cf all
+[00:31:02]: #bot-stuff | Shane Canet: $beg
+[00:31:05]: #bot-stuff | Shane Canet: $beg
+[00:31:07]: #bot-stuff | Shane Canet: $beg
+[00:31:11]: #bot-stuff | Shane Canet: $beg
+[00:31:15]: #bot-stuff | Shane Canet: $beg
+[00:31:18]: #bot-stuff | Shane Canet: $beg
+[00:31:21]: #bot-stuff | Shane Canet: $beg
+[00:31:23]: #bot-stuff | Shane Canet: $beg
+[00:31:26]: #bot-stuff | Shane Canet: $beg
+[00:31:29]: #bot-stuff | Shane Canet: $beg
+[00:31:33]: #bot-stuff | Shane Canet: $beg
+[00:31:37]: #bot-stuff | Shane Canet: $beg
+[00:31:42]: #bot-stuff | Shane Canet: $beg
+[00:31:47]: #bot-stuff | Shane Canet: $beg
+[00:31:50]: #bot-stuff | Shane Canet: $beg
+[00:31:53]: #bot-stuff | Shane Canet: $cf all
+[00:31:57]: #bot-stuff | Shane Canet: $beg
+[00:32:02]: #bot-stuff | Shane Canet: $beg
+[00:32:05]: #bot-stuff | Shane Canet: $beg
+[00:32:11]: #bot-stuff | Shane Canet: $beg
+[00:32:15]: #bot-stuff | Shane Canet: $beg
+[00:32:18]: #bot-stuff | Shane Canet: $beg
+[00:32:23]: #bot-stuff | Shane Canet: $beg
+[00:32:33]: #genshin-impact | Vinh Pham: <:YoimiyaWOW:852641963512823880>
+[00:32:37]: #bot-stuff | Shane Canet: $begb
+[00:32:41]: #bot-stuff | Shane Canet: $beg
+[00:32:45]: #bot-stuff | Shane Canet: $beg
+[00:32:48]: #bot-stuff | Shane Canet: $beg
+[00:32:52]: #bot-stuff | Shane Canet: $cf all
+[00:33:18]: #bot-stuff | Shane Canet: $beg
+[00:33:22]: #bot-stuff | Shane Canet: $beg
+[00:33:27]: #bot-stuff | Shane Canet: $beg
+[00:33:31]: #bot-stuff | Shane Canet: $beg
+[00:33:35]: #bot-stuff | Shane Canet: $beg
+[00:33:39]: #bot-stuff | Shane Canet: $beg
+[00:33:42]: #bot-stuff | Shane Canet: $cf all
+[00:33:45]: #bot-stuff | Shane Canet: $beg
+[00:33:49]: #bot-stuff | Shane Canet: $beg
+[00:33:52]: #bot-stuff | Shane Canet: $cf all
+[00:33:55]: #bot-stuff | Shane Canet: $beg
+[00:33:58]: #bot-stuff | Shane Canet: $beg
+[00:34:01]: #bot-stuff | Shane Canet: $beg
+[00:34:05]: #bot-stuff | Shane Canet: $beg
+[00:34:08]: #bot-stuff | Shane Canet: $beg
+[00:34:11]: #bot-stuff | Shane Canet: $beg
+[00:34:15]: #bot-stuff | Shane Canet: $beg
+[00:34:19]: #bot-stuff | Shane Canet: $beg
+[00:34:23]: #bot-stuff | Shane Canet: $beg
+[00:34:27]: #bot-stuff | Shane Canet: $beg
+[00:34:31]: #bot-stuff | Shane Canet: $beg
+[00:34:34]: #bot-stuff | Shane Canet: $beg
+[00:34:36]: #bot-stuff | Shane Canet: $beg
+[00:34:40]: #bot-stuff | Shane Canet: $cf all
+[00:34:45]: #bot-stuff | Shane Canet: $beg
+[00:34:48]: #bot-stuff | Shane Canet: $beg
+[00:34:52]: #bot-stuff | Shane Canet: $beg
+[00:34:55]: #bot-stuff | Shane Canet: $beg
+[00:34:58]: #bot-stuff | Shane Canet: $beg
+[00:35:01]: #bot-stuff | Shane Canet: $beg
+[00:35:05]: #bot-stuff | Shane Canet: $beg
+[00:35:08]: #bot-stuff | Shane Canet: $cf all
+[00:35:13]: #bot-stuff | Shane Canet: $beg
+[00:35:17]: #bot-stuff | Shane Canet: $beg
+[00:35:22]: #bot-stuff | Shane Canet: $beg
+[00:35:26]: #bot-stuff | Shane Canet: $beg
+[00:35:30]: #bot-stuff | Shane Canet: $beg
+[00:35:33]: #bot-stuff | Shane Canet: $cf all
+[00:35:47]: #bot-stuff | Shane Canet: $bal
+[00:35:53]: #bot-stuff | Shane Canet: $beg
+[00:35:56]: #bot-stuff | Shane Canet: $beg
+[00:35:59]: #bot-stuff | Shane Canet: $beg
+[00:36:02]: #bot-stuff | Shane Canet: $beg
+[00:36:06]: #bot-stuff | Shane Canet: $cf all
+[00:36:09]: #bot-stuff | Shane Canet: $beg
+[00:36:12]: #bot-stuff | Shane Canet: $beg
+[00:36:15]: #bot-stuff | Shane Canet: $beg
+[00:36:18]: #bot-stuff | Shane Canet: $beg
+[00:36:21]: #bot-stuff | Shane Canet: $beg

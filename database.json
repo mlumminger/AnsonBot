@@ -3,82 +3,110 @@
 		{
 			"id": "351574671109521410",
 			"wallet": 0,
-			"bank": 236,
+			"bank": 58,
 			"name": "Vinh",
 			"cooldowns": {
 				"rob": 1625021740702,
-				"beg": 1625082844632
-			}
+				"beg": 1625531050249
+			},
+			"inventory": []
 		},
 		{
 			"id": "385460963517661194",
-			"wallet": 79,
-			"bank": 2416876,
+			"wallet": 1214,
+			"bank": 166827,
 			"name": "Shane",
-			"cooldowns": {}
+			"cooldowns": {
+				"beg": 1625531784539,
+				"slots": 1625531775349
+			},
+			"inventory": []
 		},
 		{
 			"id": "459464484847747072",
 			"wallet": 266,
 			"bank": 9391,
 			"name": "Xavier",
-			"cooldowns": {}
+			"cooldowns": {},
+			"inventory": []
 		},
 		{
 			"id": "484859857409671191",
 			"wallet": 23,
-			"bank": 0,
+			"bank": 2000,
 			"name": "Torno",
-			"cooldowns": {}
+			"cooldowns": {},
+			"inventory": []
 		},
 		{
 			"id": "533468943851978773",
 			"wallet": 84,
-			"bank": 1000,
+			"bank": 2000,
 			"name": "Chau",
-			"cooldowns": {}
+			"cooldowns": {},
+			"inventory": []
 		},
 		{
 			"id": "694609292019368009",
-			"wallet": 200,
-			"bank": 79000,
+			"wallet": 0,
+			"bank": 205296,
 			"name": "Nick",
 			"cooldowns": {
 				"beg": 1625073219151,
 				"rob": 1625073066452
-			}
+			},
+			"inventory": []
 		},
 		{
 			"id": "472210194814730250",
 			"wallet": 0,
-			"bank": 0,
+			"bank": 2000,
 			"name": "Julian",
-			"cooldowns": {}
+			"cooldowns": {},
+			"inventory": []
 		},
 		{
 			"id": "236727649114914817",
 			"wallet": 413,
-			"bank": 0,
+			"bank": 2000,
 			"name": "Anson",
-			"cooldowns": {}
+			"cooldowns": {},
+			"inventory": []
 		},
 		{
 			"id": "221685858166636544",
 			"wallet": 377,
 			"bank": 2114,
 			"name": "Karen",
-			"cooldowns": {}
+			"cooldowns": {},
+			"inventory": []
+		},
+		{
+			"id": "218183977670803457",
+			"wallet": 0,
+			"bank": 1500,
+			"name": "Buckeye Lenchner",
+			"cooldowns": {},
+			"inventory": []
 		},
 		{
 			"id": "473191715411329035",
-			"wallet": 1600,
-			"bank": 1037,
+			"wallet": 554,
+			"bank": 725,
 			"name": "Max",
 			"cooldowns": {
 				"rob": 1625026497028,
-				"beg": 1625044786107
+				"beg": 1625531387519,
+				"weekly": 5254283517529
+			},
+			"inventory": [],
+			"stocks": {
+				"bod": {
+					"name": "Bishop O'Dowd",
+					"amount": 44,
+					"shorthand": "bod"
+				}
 			}
-
 		}
 	],
 	"shop": [
@@ -129,14 +157,14 @@
 		"bod": {
 			"name": "Bishop O'Dowd",
 			"shorthand": "bod",
-			"value": 11,
-			"delta": 12
+			"value": 100,
+			"delta": 10
 		},
 		"ans": {
 			"name": "Anson Corp.",
 			"shorthand": "ans",
-			"value": 166,
-			"delta": 11
+			"value": 150,
+			"delta": -5
 		}
 	}
 }

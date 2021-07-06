@@ -10,7 +10,7 @@ const client = new Discord.Client();
 
 
 ///IMPORTANT SETTINGS ////////////////
-const version = "experimental"; //master or experimental
+const version = "master"; //master or experimental
 const logAllMessages = true;
 const messagesPerLog = 1;
 
